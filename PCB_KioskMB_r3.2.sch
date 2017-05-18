@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10783,6 +10783,28 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <vertex x="-2.05" y="-2.2"/>
 </polygon>
 </package>
+<package name="CON-FPC-1.0MM-10POS">
+<smd name="1" x="-4.5" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="10" x="4.5" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="2" x="-3.5" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="-2.5" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="-1.5" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="-0.5" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.5" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="1.5" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="2.5" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="9" x="3.5" y="0" dx="0.6" dy="2.2" layer="1"/>
+<circle x="-5.5" y="2" radius="0.15" width="0.4" layer="22"/>
+<smd name="P$1" x="-7.1" y="-2.4" dx="2.6" dy="1.8" layer="1" rot="R90"/>
+<smd name="P$2" x="7.1" y="-2.4" dx="2.6" dy="1.8" layer="1" rot="R90"/>
+<wire x1="8.6" y1="-6.5" x2="-8.6" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="-8.6" y1="-6.5" x2="-8.6" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="-8.6" y1="-1.1" x2="-8.2" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="8.6" y1="-6.5" x2="8.6" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="8.6" y1="-1.1" x2="8.2" y2="-1.1" width="0.127" layer="21"/>
+<text x="-4.9" y="1.4" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.9" y="-2.7" size="1.27" layer="25">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PINV">
@@ -10840,6 +10862,28 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <attribute name="OC_FARNELL" value="1324540" constant="no"/>
 <attribute name="OC_NEWARK" value="34M6152" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="1.00MM" package="CON-FPC-1.0MM-10POS">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-10" pin="1" pad="10"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-3" pin="1" pad="3"/>
+<connect gate="-4" pin="1" pad="4"/>
+<connect gate="-5" pin="1" pad="5"/>
+<connect gate="-6" pin="1" pad="6"/>
+<connect gate="-7" pin="1" pad="7"/>
+<connect gate="-8" pin="1" pad="8"/>
+<connect gate="-9" pin="1" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+<technology name="110"/>
+<technology name="141"/>
+<technology name="22"/>
+<technology name="686"/>
+<technology name="WERI_FPC"/>
 </technologies>
 </device>
 </devices>
@@ -12010,7 +12054,7 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <part name="H4" library="SparkFun-Hardware" deviceset="STANDOFF_ELECTRICAL" device=""/>
 <part name="H5" library="SparkFun-Hardware" deviceset="STANDOFF_ELECTRICAL" device=""/>
 <part name="H6" library="SparkFun-Hardware" deviceset="STANDOFF_ELECTRICAL" device=""/>
-<part name="X1" library="con-hirose" deviceset="FH12-10S-0.5S" device="H"/>
+<part name="X1" library="con-hirose" deviceset="FH12-10S-0.5S" device="1.00MM" value="FH12-10S-0.5S1.00MM"/>
 <part name="U$90" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="Q8" library="InfineonTech-AON" deviceset="IPD30N06S2L-23" device=""/>
 <part name="Q9" library="InfineonTech-AON" deviceset="IPD30N06S2L-23" device=""/>
@@ -12043,7 +12087,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <part name="JP3" library="ChipTestJig" deviceset="M02" device="2.54MM_SCREWTERM"/>
 <part name="JP4" library="ChipTestJig" deviceset="M02" device="2.54MM_SCREWTERM"/>
 <part name="JP5" library="ChipTestJig" deviceset="M02" device="2.54MM_SCREWTERM"/>
-<part name="JP6" library="ChipTestJig" deviceset="M02" device="2.54MM_SCREWTERM"/>
 <part name="CN1" library="adafruit" deviceset="DCBARREL" device="PTH"/>
 <part name="U$109" library="SUPPLY" deviceset="+SMB" device=""/>
 <part name="U$112" library="SUPPLY" deviceset="DGND" device=""/>
@@ -15113,7 +15156,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <instance part="JP3" gate="G$1" x="53.34" y="228.6"/>
 <instance part="JP4" gate="G$1" x="53.34" y="213.36"/>
 <instance part="JP5" gate="G$1" x="53.34" y="195.58"/>
-<instance part="JP6" gate="G$1" x="53.34" y="165.1"/>
 <instance part="CN1" gate="G$1" x="55.88" y="259.08"/>
 <instance part="U$109" gate="G$1" x="66.04" y="203.2"/>
 <instance part="U$112" gate="G$1" x="66.04" y="190.5" smashed="yes"/>
