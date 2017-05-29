@@ -11430,8 +11430,8 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <part name="C26" library="DISCRETE" deviceset="C-0603" device="" value="10nF"/>
 <part name="C12" library="DISCRETE" deviceset="C-0603" device="" value="10nF"/>
 <part name="C13" library="DISCRETE" deviceset="C-0603" device="" value="10nF"/>
-<part name="F1" library="technol" deviceset="REF" device=""/>
-<part name="F2" library="technol" deviceset="REF" device=""/>
+<part name="FID1" library="technol" deviceset="REF" device=""/>
+<part name="FID2" library="technol" deviceset="REF" device=""/>
 <part name="C14" library="DISCRETE" deviceset="C-0603" device="" value="1u/6.3V"/>
 <part name="IC2" library="TexasInstruments-AON" deviceset="SN65HVD3082E" device="D" value="SN65HVD12D"/>
 <part name="L2" library="DISCRETE" deviceset="L-1206" device="" value="HI1206T500R-00"/>
@@ -12093,6 +12093,7 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <part name="R34" library="DISCRETE" deviceset="R-0603" device="" value="1K"/>
 <part name="R35" library="DISCRETE" deviceset="R-0603" device="" value="3k"/>
 <part name="R36" library="DISCRETE" deviceset="R-0603" device="" value="1k"/>
+<part name="FID3" library="technol" deviceset="REF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12538,10 +12539,10 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <attribute name="NAME" x="67.6275" y="314.6425" size="1.524" layer="95"/>
 <attribute name="VALUE" x="67.6275" y="311.15" size="1.524" layer="96"/>
 </instance>
-<instance part="F1" gate="G$1" x="454.66" y="45.72" smashed="yes">
+<instance part="FID1" gate="G$1" x="454.66" y="45.72" smashed="yes">
 <attribute name="NAME" x="453.39" y="44.45" size="1.778" layer="95"/>
 </instance>
-<instance part="F2" gate="G$1" x="469.9" y="45.72" smashed="yes">
+<instance part="FID2" gate="G$1" x="469.9" y="45.72" smashed="yes">
 <attribute name="NAME" x="466.09" y="44.45" size="1.778" layer="95"/>
 </instance>
 <instance part="C14" gate="G$1" x="431.8" y="246.38" smashed="yes">
@@ -12786,6 +12787,9 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <instance part="X1" gate="-9" x="327.66" y="210.82"/>
 <instance part="X1" gate="-10" x="327.66" y="208.28"/>
 <instance part="U$90" gate="G$1" x="307.34" y="208.28" smashed="yes"/>
+<instance part="FID3" gate="G$1" x="469.9" y="53.34" smashed="yes">
+<attribute name="NAME" x="466.09" y="52.07" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
