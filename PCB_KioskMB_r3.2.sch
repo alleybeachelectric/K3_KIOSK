@@ -11375,7 +11375,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <part name="U$110" library="SUPPLY" deviceset="+3.3V/2" device=""/>
 <part name="U$34" library="SUPPLY" deviceset="+3.3V/1" device=""/>
 <part name="U$115" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="U$5" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$61" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$122" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$121" library="SUPPLY" deviceset="DGND" device=""/>
@@ -12047,7 +12046,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <part name="U$85" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$86" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$89" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="H1" library="SparkFun-Hardware" deviceset="STANDOFF_ELECTRICAL" device=""/>
 <part name="H2" library="SparkFun-Hardware" deviceset="STANDOFF_ELECTRICAL" device=""/>
 <part name="H3" library="SparkFun-Hardware" deviceset="STANDOFF_ELECTRICAL" device=""/>
 <part name="H4" library="SparkFun-Hardware" deviceset="STANDOFF_ELECTRICAL" device=""/>
@@ -12343,7 +12341,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <instance part="U$110" gate="A" x="353.06" y="269.24" smashed="yes"/>
 <instance part="U$34" gate="G$1" x="208.28" y="111.76" smashed="yes"/>
 <instance part="U$115" gate="G$1" x="15.24" y="48.26" smashed="yes"/>
-<instance part="U$5" gate="G$1" x="485.14" y="50.8" smashed="yes" rot="MR0"/>
 <instance part="U$61" gate="G$1" x="492.76" y="50.8" smashed="yes" rot="MR0"/>
 <instance part="U$122" gate="G$1" x="29.21" y="307.34" smashed="yes"/>
 <instance part="U$121" gate="G$1" x="20.32" y="10.16" smashed="yes"/>
@@ -12770,7 +12767,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <instance part="U$85" gate="G$1" x="500.38" y="50.8" smashed="yes" rot="MR0"/>
 <instance part="U$86" gate="G$1" x="508" y="50.8" smashed="yes" rot="MR0"/>
 <instance part="U$89" gate="G$1" x="523.24" y="50.8" smashed="yes" rot="MR0"/>
-<instance part="H1" gate="G$1" x="485.14" y="66.04" rot="R270"/>
 <instance part="H2" gate="G$1" x="492.76" y="66.04" rot="R270"/>
 <instance part="H3" gate="G$1" x="500.38" y="66.04" rot="R270"/>
 <instance part="H4" gate="G$1" x="508" y="66.04" rot="R270"/>
@@ -13362,11 +13358,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <wire x1="353.06" y1="256.54" x2="340.36" y2="256.54" width="0.1524" layer="91"/>
 <pinref part="U$60" gate="G$1" pin="DGND"/>
 <pinref part="J8" gate="G$1" pin="9"/>
-</segment>
-<segment>
-<pinref part="U$5" gate="G$1" pin="DGND"/>
-<pinref part="H1" gate="G$1" pin="P$1"/>
-<wire x1="485.14" y1="58.42" x2="485.14" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$61" gate="G$1" pin="DGND"/>
@@ -14217,11 +14208,8 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <junction x="431.8" y="251.46"/>
 </segment>
 <segment>
-<wire x1="472.44" y1="254" x2="467.36" y2="254" width="0.1524" layer="91"/>
-<pinref part="Q3" gate="G$1" pin="4"/>
 <pinref part="U$159" gate="A" pin="+3.3V/2"/>
 <pinref part="R11" gate="G$1" pin="2"/>
-<junction x="472.44" y="254"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VCC"/>

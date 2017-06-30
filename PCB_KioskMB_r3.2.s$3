@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.1">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11316,7 +11316,7 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="USB_Data" width="0.1524" drill="0">
+<class number="1" name="USB_Data" width="0.32" drill="0">
 <clearance class="1" value="0.18"/>
 </class>
 </classes>
@@ -12031,6 +12031,7 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <part name="U$341" library="SUPPLY" deviceset="AGND" device=""/>
 <part name="C172" library="DISCRETE" deviceset="C-0603" device="" value="1uF,25V"/>
 <part name="U$342" library="SUPPLY" deviceset="+3.3V/1" device=""/>
+<part name="TP10" library="TESTPAD" deviceset="ROUND_SMD" device="1MM"/>
 <part name="C187" library="DISCRETE" deviceset="ELC-7,5" device="" value="2mF/16V"/>
 <part name="J50" library="CON-PhoenixContac-AON" deviceset="TERM-2" device=""/>
 <part name="U$47" library="SUPPLY" deviceset="DGND" device=""/>
@@ -12186,6 +12187,7 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <text x="263.2075" y="287.3375" size="1.27" layer="94">O</text>
 <text x="263.2075" y="272.0975" size="1.27" layer="94">O</text>
 <text x="195.2625" y="289.8775" size="1.27" layer="94">O</text>
+<text x="195.2625" y="292.4175" size="1.27" layer="94">O</text>
 <text x="193.675" y="282.2575" size="1.27" layer="94">I/O</text>
 <text x="193.675" y="279.7175" size="1.27" layer="94">I/O</text>
 <wire x1="233.68" y1="71.12" x2="233.68" y2="81.28" width="0.1524" layer="94"/>
@@ -12753,6 +12755,9 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 </instance>
 <instance part="U$170" gate="G$1" x="500.38" y="256.54" rot="R180"/>
 <instance part="U$171" gate="G$1" x="500.38" y="228.6" rot="R180"/>
+<instance part="TP10" gate="G$1" x="157.48" y="292.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="148.9075" y="291.465" size="1.524" layer="95"/>
+</instance>
 <instance part="U2" gate="G$1" x="386.08" y="200.66"/>
 <instance part="U$64" gate="G$1" x="414.02" y="198.12" smashed="yes"/>
 <instance part="U$68" gate="A" x="414.02" y="215.9" smashed="yes"/>
@@ -15071,6 +15076,14 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <pinref part="IC3" gate="G$1" pin="RA4/TDI/CN37"/>
 <pinref part="TP2" gate="G$1" pin="TP"/>
 <wire x1="175.26" y1="297.18" x2="198.12" y2="297.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="WAS_ETH_ON" class="0">
+<segment>
+<wire x1="198.12" y1="292.1" x2="160.02" y2="292.1" width="0.1524" layer="91"/>
+<label x="177.8" y="292.4175" size="1.778" layer="95"/>
+<pinref part="IC3" gate="G$1" pin="RA6/CN39"/>
+<pinref part="TP10" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$9" class="0">
