@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="DGND" color="10" fill="8" visible="yes" active="yes"/>
@@ -181,10 +181,10 @@ Mainboard R3.2</text>
 <text x="98.5" y="11.755" size="1.27" layer="125" ratio="12">Com Extension</text>
 <text x="108.4" y="47.4" size="1.016" layer="125" ratio="12">Prog</text>
 <rectangle x1="100.4" y1="47.4" x2="101.4" y2="48.4" layer="125" rot="R90"/>
-<wire x1="146.05" y1="101.9" x2="0" y2="101.9" width="0" layer="20"/>
-<wire x1="0" y1="101.9" x2="0" y2="0" width="0" layer="20"/>
-<wire x1="0" y1="0" x2="146.05" y2="0" width="0" layer="20"/>
-<wire x1="146.05" y1="0" x2="146.05" y2="101.9" width="0" layer="20"/>
+<wire x1="146.8" y1="102.5" x2="-0.6" y2="102.5" width="0" layer="20"/>
+<wire x1="-0.6" y1="102.5" x2="-0.6" y2="0" width="0" layer="20"/>
+<wire x1="-0.6" y1="0" x2="146.8" y2="0" width="0" layer="20"/>
+<wire x1="146.8" y1="0" x2="146.8" y2="102.5" width="0" layer="20"/>
 <text x="139.700003125" y="59.700003125" size="0.762" layer="125" ratio="12">B1</text>
 <text x="112.07950625" y="27.273196875" size="0.762" layer="125" ratio="12">C1</text>
 <text x="99.0268" y="43.329503125" size="0.762" layer="125" ratio="12" rot="R90">C2</text>
@@ -5091,13 +5091,13 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="40.8344" y="87.1305" size="0.762" layer="27" ratio="12" rot="R270"/>
 </element>
 <element name="C187" library="DISCRETE" package="ES-7,5" value="2mF/16V" x="-90.207" y="48.6556"/>
-<element name="J50" library="CON-PhoenixContac-AON" package="TERM-2" value="" x="-68.1368" y="76.0148"/>
-<element name="D32" library="Littelfuse" package="SMB" value="P6SMB16A" x="-89.203" y="78.5008"/>
-<element name="F3" library="Littelfuse" package="1812" value="2920L250DR" x="-89.5208" y="71.9434" rot="R180"/>
+<element name="J50" library="CON-PhoenixContac-AON" package="TERM-2" value="" x="-79.3368" y="69.4148"/>
+<element name="D32" library="Littelfuse" package="SMB" value="P6SMB16A" x="-105.303" y="78.5008"/>
+<element name="F3" library="Littelfuse" package="1812" value="2920L250DR" x="-112.8208" y="61.5434" rot="R180"/>
 <element name="U2" library="elocktech_lib" package="HRXL-MAXSONAR-WRC-MB7387" value="HRXL-MAXSONAR-WRC-MB7387" x="94.5" y="95.5"/>
 <element name="C35" library="DISCRETE" package="0603" value="0.1uF" x="110.6" y="93.7" rot="R180"/>
 <element name="R26" library="DISCRETE" package="0603-0RTOP" value="10K" x="107" y="93.7"/>
-<element name="H1" library="SparkFun-Hardware" package="STANDOFF-ELECTRICAL" value="STANDOFF_ELECTRICAL" x="-85.0746" y="29.5264"/>
+<element name="H1" library="SparkFun-Hardware" package="STANDOFF-ELECTRICAL" value="STANDOFF_ELECTRICAL" x="-126.8746" y="20.9264"/>
 <element name="H2" library="SparkFun-Hardware" package="STANDOFF-ELECTRICAL" value="STANDOFF_ELECTRICAL" x="65.528" y="27.21"/>
 <element name="H3" library="SparkFun-Hardware" package="STANDOFF-ELECTRICAL" value="STANDOFF_ELECTRICAL" x="142.715" y="20.4705"/>
 <element name="H4" library="SparkFun-Hardware" package="STANDOFF-ELECTRICAL" value="STANDOFF_ELECTRICAL" x="142.7265" y="98.693"/>
@@ -6091,7 +6091,7 @@ design rules under a new name.</description>
 <contactref element="J40" pad="S3"/>
 <contactref element="J40" pad="S4"/>
 <polygon width="0.5" layer="2">
-<vertex x="46.566" y="101.6"/>
+<vertex x="46.566" y="102.1"/>
 <vertex x="46.566" y="74.419896875"/>
 <vertex x="45.72" y="74.422"/>
 <vertex x="40.64" y="74.422"/>
@@ -6100,11 +6100,10 @@ design rules under a new name.</description>
 <vertex x="27.178" y="74.422"/>
 <vertex x="17.272" y="74.422"/>
 <vertex x="17.272" y="65.042"/>
-<vertex x="0.4" y="65.042"/>
-<vertex x="0.4" y="0.4"/>
-<vertex x="144.15" y="0.3"/>
-<vertex x="145.75" y="0.3"/>
-<vertex x="145.75" y="101.6"/>
+<vertex x="-0.2" y="65.042"/>
+<vertex x="-0.2" y="0.4"/>
+<vertex x="146.35" y="0.4"/>
+<vertex x="146.35" y="102.1"/>
 </polygon>
 <contactref element="U2" pad="7"/>
 <contactref element="C35" pad="1"/>
@@ -6680,8 +6679,6 @@ design rules under a new name.</description>
 <wire x1="89.535" y1="38.5124" x2="89.535" y2="38.989" width="0.3556" layer="1"/>
 <wire x1="89.535" y1="38.989" x2="89.2556" y2="39.2684" width="0.3556" layer="1"/>
 <wire x1="89.2556" y1="39.2684" x2="88.5952" y2="39.2684" width="0.3556" layer="1"/>
-<wire x1="3.278" y1="92.7185" x2="0.762" y2="90.2025" width="1.016" layer="2"/>
-<wire x1="0.762" y1="90.2025" x2="0.762" y2="64.008" width="1.016" layer="2"/>
 <wire x1="66.948" y1="42.038" x2="67.817" y2="42.038" width="0.1524" layer="1"/>
 <wire x1="67.817" y1="42.038" x2="67.818" y2="42.037" width="0.1524" layer="1"/>
 <wire x1="61.848" y1="34.238" x2="61.848" y2="34.2148" width="0.1524" layer="1"/>
@@ -6699,10 +6696,12 @@ design rules under a new name.</description>
 <wire x1="28.794" y1="34.5374" x2="27.591" y2="34.5374" width="0.3556" layer="1"/>
 <wire x1="27.591" y1="34.5374" x2="27.5844" y2="34.544" width="0.3556" layer="1"/>
 <via x="27.5844" y="34.544" extent="1-16" drill="0.3"/>
-<wire x1="-86.397" y1="48.6556" x2="-85.0746" y2="29.5264" width="0" layer="19" extent="1-1"/>
-<wire x1="-87.003" y1="78.5008" x2="-86.397" y2="48.6556" width="0" layer="19" extent="1-1"/>
-<wire x1="-70.6768" y1="79.8248" x2="-87.003" y2="78.5008" width="0" layer="19" extent="1-1"/>
-<wire x1="0.762" y1="90.2025" x2="-70.6768" y2="79.8248" width="0" layer="19" extent="1-2"/>
+<wire x1="3.278" y1="92.7185" x2="0.154" y2="89.5945" width="1" layer="2"/>
+<wire x1="0.154" y1="89.5945" x2="0.154" y2="64.3" width="1" layer="2"/>
+<wire x1="-86.397" y1="48.6556" x2="-126.8746" y2="20.9264" width="0" layer="19" extent="1-1"/>
+<wire x1="-103.103" y1="78.5008" x2="-86.397" y2="48.6556" width="0" layer="19" extent="1-1"/>
+<wire x1="-81.8768" y1="73.2248" x2="-103.103" y2="78.5008" width="0" layer="19" extent="1-1"/>
+<wire x1="0.154" y1="89.5945" x2="-81.8768" y2="73.2248" width="0" layer="19" extent="1-2"/>
 </signal>
 <signal name="N$1">
 <contactref element="C10" pad="2"/>
@@ -9644,7 +9643,7 @@ design rules under a new name.</description>
 <wire x1="39.1266" y1="66.2916" x2="29.5356" y2="75.8826" width="1.27" layer="15"/>
 <wire x1="48.50145625" y1="63.2968" x2="45.50665625" y2="66.2916" width="1.27" layer="15"/>
 <wire x1="45.50665625" y1="66.2916" x2="39.1266" y2="66.2916" width="1.27" layer="15"/>
-<wire x1="-65.5968" y1="79.8248" x2="23.178" y2="78.816" width="0" layer="19" extent="1-1"/>
+<wire x1="-76.7968" y1="73.2248" x2="23.178" y2="78.816" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B12_L">
 <contactref element="Q16" pad="6"/>
@@ -10514,8 +10513,8 @@ design rules under a new name.</description>
 <wire x1="55.9054" y1="90.3224" x2="55.9054" y2="88.6504" width="1.27" layer="15"/>
 <wire x1="55.9054" y1="88.6504" x2="55.905" y2="88.65" width="1.27" layer="15"/>
 <wire x1="60.8076" y1="63.9064" x2="60.8076" y2="72.2376" width="1.27" layer="15"/>
-<wire x1="-91.756" y1="71.9434" x2="-94.017" y2="48.6556" width="0" layer="19" extent="1-1"/>
-<wire x1="-91.403" y1="78.5008" x2="-91.756" y2="71.9434" width="0" layer="19" extent="1-1"/>
+<wire x1="-115.056" y1="61.5434" x2="-94.017" y2="48.6556" width="0" layer="19" extent="1-1"/>
+<wire x1="-107.503" y1="78.5008" x2="-115.056" y2="61.5434" width="0" layer="19" extent="1-1"/>
 <wire x1="5.234" y1="8.448" x2="-94.017" y2="48.6556" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$45">
@@ -11591,8 +11590,8 @@ design rules under a new name.</description>
 <contactref element="C177" pad="1"/>
 <contactref element="C172" pad="2"/>
 <polygon width="0.5" layer="2" isolate="0.254" rank="2">
-<vertex x="0.4" y="101.6"/>
-<vertex x="45.666" y="101.6"/>
+<vertex x="-0.2" y="102.1"/>
+<vertex x="45.666" y="102.1"/>
 <vertex x="45.666" y="75.438"/>
 <vertex x="41.91" y="75.438"/>
 <vertex x="41.91" y="78.74"/>
@@ -11600,7 +11599,7 @@ design rules under a new name.</description>
 <vertex x="25.908" y="75.438"/>
 <vertex x="16.002" y="75.438"/>
 <vertex x="16.002" y="66.04"/>
-<vertex x="0.4" y="66.04"/>
+<vertex x="-0.2" y="66.04"/>
 </polygon>
 <polygon width="0.5" layer="1">
 <vertex x="16.278" y="77.116"/>
@@ -11882,7 +11881,7 @@ design rules under a new name.</description>
 <signal name="N$54">
 <contactref element="J45" pad="4"/>
 <contactref element="F3" pad="1"/>
-<wire x1="-87.2856" y1="71.9434" x2="5.334" y2="53.848" width="0" layer="19" extent="1-1"/>
+<wire x1="-110.5856" y1="61.5434" x2="5.334" y2="53.848" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="U2" pad="4"/>
@@ -12453,6 +12452,31 @@ design rules under a new name.</description>
 <approved hash="21,19,5545574756c754c5"/>
 <approved hash="21,19,26c2dabd26bd26be"/>
 <approved hash="21,19,5c962097de97dd68"/>
+<approved hash="19,1,ac50ae4ed228d036"/>
+<approved hash="19,1,a150d64eaae1ddff"/>
+<approved hash="19,1,8150864efa2afd34"/>
+<approved hash="19,1,5054ee4a92ea2cf4"/>
+<approved hash="19,1,00e007fe06470159"/>
+<approved hash="19,1,3d87fa6302e3c7af"/>
+<approved hash="19,1,3b93e077185fc1d3"/>
+<approved hash="19,1,5014ee0aeaf554eb"/>
+<approved hash="19,1,2010c60ec2f724e9"/>
+<approved hash="19,1,6e76103eea4897a0"/>
+<approved hash="19,1,69f20a52f05c91ac"/>
+<approved hash="19,1,0354a6adbcbeb944"/>
+<approved hash="19,1,66031de607f4c412"/>
+<approved hash="19,1,e0d05ece580fe611"/>
+<approved hash="19,1,7cfcdae2da617c7f"/>
+<approved hash="19,1,6f6b229240855d7e"/>
+<approved hash="19,1,fa3cf1d9a3cf4029"/>
+<approved hash="19,1,20b0c7aec24c2552"/>
+<approved hash="19,1,22b0c5aec2cc25d2"/>
+<approved hash="19,1,52b025ae22ce55d0"/>
+<approved hash="19,1,50b027ae224e5550"/>
+<approved hash="6,1,c10e0d0ff20f3301"/>
+<approved hash="6,1,9803ab02ab023201"/>
+<approved hash="6,1,c1063d07c20602fe"/>
+<approved hash="6,1,980b9af49b0a0201"/>
 </errors>
 </board>
 </drawing>

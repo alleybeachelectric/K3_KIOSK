@@ -46,9 +46,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -4037,11 +4037,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="136.0795" y="11.3732" size="0.762" layer="25" ratio="12"/>
 <attribute name="VALUE" x="135.9395" y="12.5844" size="0.762" layer="27" ratio="12"/>
 </element>
-<element name="F1" library="technol" package="REF" value="" x="8.358" y="1.874" smashed="yes">
-<attribute name="NAME" x="7.788" y="2.552" size="0.762" layer="25" ratio="12"/>
+<element name="F1" library="technol" package="REF" value="" x="2.858" y="6.074" smashed="yes">
+<attribute name="NAME" x="2.288" y="6.752" size="0.762" layer="25" ratio="12"/>
 </element>
-<element name="F2" library="technol" package="REF" value="" x="138.773" y="95.873" smashed="yes">
-<attribute name="NAME" x="138.203" y="96.651" size="0.762" layer="25" ratio="12"/>
+<element name="F2" library="technol" package="REF" value="" x="137.873" y="100.273" smashed="yes">
+<attribute name="NAME" x="137.303" y="101.051" size="0.762" layer="25" ratio="12"/>
 </element>
 <element name="C14" library="DISCRETE" package="0603" value="1u/6.3V" x="85.364" y="71.37" smashed="yes">
 <attribute name="NAME" x="84.0435" y="71.0432" size="0.762" layer="25" ratio="12"/>
@@ -6699,9 +6699,9 @@ design rules under a new name.</description>
 <wire x1="3.278" y1="92.7185" x2="0.154" y2="89.5945" width="1" layer="2"/>
 <wire x1="0.154" y1="89.5945" x2="0.154" y2="64.3" width="1" layer="2"/>
 <wire x1="-86.397" y1="48.6556" x2="-126.8746" y2="20.9264" width="0" layer="19" extent="1-1"/>
-<wire x1="-103.103" y1="78.5008" x2="-86.397" y2="48.6556" width="0" layer="19" extent="1-1"/>
-<wire x1="-81.8768" y1="73.2248" x2="-103.103" y2="78.5008" width="0" layer="19" extent="1-1"/>
-<wire x1="0.154" y1="89.5945" x2="-81.8768" y2="73.2248" width="0" layer="19" extent="1-2"/>
+<wire x1="-81.8768" y1="73.2248" x2="-86.397" y2="48.6556" width="0" layer="19" extent="1-1"/>
+<wire x1="-103.103" y1="78.5008" x2="-81.8768" y2="73.2248" width="0" layer="19" extent="1-1"/>
+<wire x1="0.154" y1="64.3" x2="-81.8768" y2="73.2248" width="0" layer="19" extent="1-2"/>
 </signal>
 <signal name="N$1">
 <contactref element="C10" pad="2"/>
@@ -9643,7 +9643,7 @@ design rules under a new name.</description>
 <wire x1="39.1266" y1="66.2916" x2="29.5356" y2="75.8826" width="1.27" layer="15"/>
 <wire x1="48.50145625" y1="63.2968" x2="45.50665625" y2="66.2916" width="1.27" layer="15"/>
 <wire x1="45.50665625" y1="66.2916" x2="39.1266" y2="66.2916" width="1.27" layer="15"/>
-<wire x1="-76.7968" y1="73.2248" x2="23.178" y2="78.816" width="0" layer="19" extent="1-1"/>
+<wire x1="-76.7968" y1="73.2248" x2="23.2156" y2="76.7588" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B12_L">
 <contactref element="Q16" pad="6"/>
@@ -10513,8 +10513,8 @@ design rules under a new name.</description>
 <wire x1="55.9054" y1="90.3224" x2="55.9054" y2="88.6504" width="1.27" layer="15"/>
 <wire x1="55.9054" y1="88.6504" x2="55.905" y2="88.65" width="1.27" layer="15"/>
 <wire x1="60.8076" y1="63.9064" x2="60.8076" y2="72.2376" width="1.27" layer="15"/>
-<wire x1="-115.056" y1="61.5434" x2="-94.017" y2="48.6556" width="0" layer="19" extent="1-1"/>
 <wire x1="-107.503" y1="78.5008" x2="-115.056" y2="61.5434" width="0" layer="19" extent="1-1"/>
+<wire x1="-94.017" y1="48.6556" x2="-115.056" y2="61.5434" width="0" layer="19" extent="1-1"/>
 <wire x1="5.234" y1="8.448" x2="-94.017" y2="48.6556" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$45">
@@ -12450,8 +12450,16 @@ design rules under a new name.</description>
 <approved hash="21,19,98ac9aa09aa098ac"/>
 <approved hash="21,19,9aec98ee996e9b6c"/>
 <approved hash="21,19,5545574756c754c5"/>
-<approved hash="21,19,26c2dabd26bd26be"/>
 <approved hash="21,19,5c962097de97dd68"/>
+<approved hash="21,19,a970a90d550fab0c"/>
+<approved hash="21,19,e00fe1f3e18d1d8f"/>
+<approved hash="21,19,4183bd80438041fe"/>
+<approved hash="21,19,ab73a971a971ab73"/>
+<approved hash="21,19,c9c0cbc3cbc3c9c0"/>
+<approved hash="21,19,4ecc4eb24b4e354e"/>
+<approved hash="21,19,a1d5dfd523d72429"/>
+<approved hash="21,19,26c2dabd26bd26be"/>
+<approved hash="21,19,e7efe5ee65ee67ef"/>
 <approved hash="19,1,ac50ae4ed228d036"/>
 <approved hash="19,1,a150d64eaae1ddff"/>
 <approved hash="19,1,8150864efa2afd34"/>
