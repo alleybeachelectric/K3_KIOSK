@@ -12207,6 +12207,7 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <text x="337.82" y="208.28" size="1.778" layer="94">SW</text>
 <text x="193.04" y="96.52" size="1.778" layer="97">0x49</text>
 <text x="256.54" y="96.52" size="1.778" layer="97">0x48</text>
+<text x="416.56" y="322.58" size="1.778" layer="94">RFID</text>
 </plain>
 <instances>
 <instance part="J4" gate="G$1" x="157.48" y="320.04" smashed="yes" rot="MR180">

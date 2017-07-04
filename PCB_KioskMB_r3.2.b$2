@@ -8611,7 +8611,7 @@ design rules under a new name.</description>
 <element name="H5" library="SparkFun-Hardware" package="STANDOFF-ELECTRICAL" value="STANDOFF_ELECTRICAL" x="75.5" y="86.75" smashed="yes">
 <attribute name="VALUE" x="75.5" y="83.448" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="H6" library="SparkFun-Hardware" package="STANDOFF-ELECTRICAL" value="STANDOFF_ELECTRICAL" x="13.278" y="92.7185" smashed="yes">
+<element name="H1" library="SparkFun-Hardware" package="STANDOFF-ELECTRICAL" value="STANDOFF_ELECTRICAL" x="13.278" y="92.7185" smashed="yes">
 <attribute name="VALUE" x="13.278" y="89.4165" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="X1" library="con-hirose" package="CON-FPC-1.0MM-10POS" value="FH12-10S-0.5S1.00MM" x="74.244" y="6.771" smashed="yes">
@@ -9617,7 +9617,7 @@ design rules under a new name.</description>
 <contactref element="H3" pad="P1"/>
 <contactref element="H4" pad="P1"/>
 <contactref element="H5" pad="P1"/>
-<contactref element="H6" pad="P1"/>
+<contactref element="H1" pad="P1"/>
 <contactref element="X1" pad="7"/>
 <contactref element="X1" pad="8"/>
 <contactref element="Q8" pad="2"/>

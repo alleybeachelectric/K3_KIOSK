@@ -1512,7 +1512,7 @@ I2C</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="DISCRETE">
+<library name="discrete" urn="urn:adsk.eagle:library:211">
 <packages>
 <package name="0603">
 <description>Standard 0603 package</description>
@@ -4710,7 +4710,7 @@ TS-003</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="TESTPAD">
+<library name="testpad" urn="urn:adsk.eagle:library:385">
 <packages>
 <package name="SMD_ROUND_1MM">
 <smd name="P$1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100"/>
@@ -4724,7 +4724,7 @@ TS-003</description>
 <smd name="P$1" x="0" y="0" dx="0.7" dy="0.7" layer="1" roundness="100"/>
 <text x="-0.762" y="0.6096" size="0.762" layer="25" font="vector" ratio="13">&gt;name</text>
 </package>
-<package name="P1-13">
+<package name="P1-13@1">
 <wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.127" layer="21"/>
 <wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.127" layer="21"/>
 <wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.127" layer="21"/>
@@ -4750,68 +4750,301 @@ TS-003</description>
 <pad name="1" x="0" y="0" drill="0.8128" diameter="1.2192" shape="octagon"/>
 <text x="-1.0335" y="1.1288" size="0.762" layer="25" ratio="12">&gt;NAME</text>
 </package>
-<package name="TP_0.8">
-<description>Pad drill 32mil</description>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.127" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
-<pad name="1" x="0" y="0" drill="0.8128" diameter="1.6256" shape="square"/>
-<text x="-1.3335" y="1.4288" size="0.762" layer="25" ratio="12">&gt;NAME</text>
+<package name="B1,27" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<wire x1="-0.635" y1="0" x2="0.635" y2="0" width="0.0024" layer="37"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.0024" layer="37"/>
+<smd name="TP" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
+<text x="-0.635" y="1.016" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.635" y="-0.762" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-0.635" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="B2,54" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<wire x1="-0.635" y1="0" x2="0.635" y2="0" width="0.0024" layer="37"/>
+<wire x1="0" y1="-0.635" x2="0" y2="0.635" width="0.0024" layer="37"/>
+<circle x="0" y="0" radius="0.635" width="0.254" layer="37"/>
+<smd name="TP" x="0" y="0" dx="2.54" dy="2.54" layer="1" roundness="100" cream="no"/>
+<text x="-1.27" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-1.397" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="-3.175" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="P1-13" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<circle x="0" y="0" radius="0.762" width="0.1524" layer="51"/>
+<pad name="TP" x="0" y="0" drill="1.3208" diameter="2.159" shape="octagon"/>
+<text x="-1.016" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 <rectangle x1="-0.3302" y1="-0.3302" x2="0.3302" y2="0.3302" layer="51"/>
 </package>
-<package name="TP_1.2">
-<description>Test pad drill 48mil (1.2mm), pad 2.032mm</description>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.127" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.2192" diameter="2.032" shape="square"/>
-<text x="-1.3811" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<package name="P1-13Y" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<circle x="0" y="0" radius="0.762" width="0.1524" layer="51"/>
+<pad name="TP" x="0" y="0" drill="1.3208" diameter="1.905" shape="long" rot="R90"/>
+<text x="-0.889" y="2.159" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="-3.81" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 <rectangle x1="-0.3302" y1="-0.3302" x2="0.3302" y2="0.3302" layer="51"/>
 </package>
-<package name="TP_1.2R">
-<description>Test pad  48 mil (1.2mm)</description>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.127" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.2192" diameter="2.032"/>
-<text x="-1.3811" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<package name="P1-17" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<circle x="0" y="0" radius="0.8128" width="0.1524" layer="51"/>
+<pad name="TP" x="0" y="0" drill="1.7018" diameter="2.54" shape="octagon"/>
+<text x="-1.143" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="-3.175" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 <rectangle x1="-0.3302" y1="-0.3302" x2="0.3302" y2="0.3302" layer="51"/>
 </package>
-<package name="TP_1.2-3">
-<description>Test pad, 1.2mm drill, 3mm diameter</description>
-<wire x1="-1.6" y1="1.6" x2="1.6" y2="1.6" width="0.1524" layer="21"/>
-<wire x1="1.6" y1="1.6" x2="1.6" y2="-1.6" width="0.1524" layer="21"/>
-<wire x1="1.6" y1="-1.6" x2="-1.6" y2="-1.6" width="0.1524" layer="21"/>
-<wire x1="-1.6" y1="-1.6" x2="-1.6" y2="1.6" width="0.1524" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.2192" diameter="3.048" shape="square"/>
-<text x="-1.9811" y="1.797" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<package name="P1-17Y" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<circle x="0" y="0" radius="0.8128" width="0.1524" layer="51"/>
+<pad name="TP" x="0" y="0" drill="1.7018" diameter="2.1208" shape="long" rot="R90"/>
+<text x="-1.143" y="2.286" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="-3.81" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 <rectangle x1="-0.3302" y1="-0.3302" x2="0.3302" y2="0.3302" layer="51"/>
 </package>
-<package name="TP_1.2R-3">
-<description>Test pad round, 1.2mm drill, 3mm diameter</description>
-<circle x="0" y="0" radius="1.6" width="0.1524" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.2192" diameter="3.048"/>
-<text x="-1.9811" y="1.797" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<package name="P1-20" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<circle x="0" y="0" radius="1.016" width="0.1524" layer="51"/>
+<pad name="TP" x="0" y="0" drill="2.0066" diameter="3.1496" shape="octagon"/>
+<text x="-1.524" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="-3.175" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 <rectangle x1="-0.3302" y1="-0.3302" x2="0.3302" y2="0.3302" layer="51"/>
+</package>
+<package name="P1-20Y" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<circle x="0" y="0" radius="1.016" width="0.1524" layer="51"/>
+<pad name="TP" x="0" y="0" drill="2.0066" diameter="2.54" shape="long" rot="R90"/>
+<text x="-1.27" y="2.794" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="-4.445" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+<rectangle x1="-0.3302" y1="-0.3302" x2="0.3302" y2="0.3302" layer="51"/>
+</package>
+<package name="TP06R" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="0.6" dy="0.6" layer="1" roundness="100" cream="no"/>
+<text x="-0.3" y="0.4001" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.254" y="-0.381" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP06SQ" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="0.5996" dy="0.5996" layer="1" cream="no"/>
+<text x="-0.3" y="0.4001" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.254" y="-0.381" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP07R" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="0.7" dy="0.7" layer="1" roundness="100" cream="no"/>
+<text x="-0.3" y="0.4001" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.254" y="-0.508" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP07SQ" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="0.7" dy="0.7" layer="1" cream="no"/>
+<text x="-0.3" y="0.4001" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.381" y="-0.381" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP08R" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="0.8" dy="0.8" layer="1" roundness="100" cream="no"/>
+<text x="-0.3" y="0.4001" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.381" y="-0.381" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP08SQ" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="0.8" dy="0.8" layer="1" cream="no"/>
+<text x="-0.3" y="0.4001" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.381" y="-0.508" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP09R" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="0.9" dy="0.9" layer="1" roundness="100" cream="no"/>
+<text x="-0.4501" y="0.5001" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.381" y="-0.508" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP09SQ" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="0.8998" dy="0.8998" layer="1" cream="no"/>
+<text x="-0.4501" y="0.5001" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.381" y="-0.508" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP10R" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+<text x="-0.5001" y="0.5499" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.381" y="-0.508" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP10SQ" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1" dy="1" layer="1" cream="no"/>
+<text x="-0.5001" y="0.5499" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.508" y="-0.635" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP11R" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.1" dy="1.1" layer="1" roundness="100" cream="no"/>
+<text x="-0.5499" y="0.5999" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.508" y="-0.508" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP11SQ" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.1" dy="1.1" layer="1" cream="no"/>
+<text x="-0.5499" y="0.5999" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.508" y="-0.635" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP12SQ" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.1998" dy="1.1998" layer="1" cream="no"/>
+<text x="-0.5999" y="0.65" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.508" y="-0.635" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP12R" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.2" dy="1.2" layer="1" roundness="100" cream="no"/>
+<text x="-0.5999" y="0.65" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.508" y="-0.635" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP13R" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.3" dy="1.3" layer="1" roundness="100" cream="no"/>
+<text x="-0.65" y="0.7" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.508" y="-0.635" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP14R" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.4" dy="1.4" layer="1" roundness="100" cream="no"/>
+<text x="-0.7" y="0.7501" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.508" y="-0.762" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP15R" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<text x="-0.7501" y="0.8001" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-0.762" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP16R" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.6" dy="1.6" layer="1" roundness="100" cream="no"/>
+<text x="-0.8001" y="0.8499" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-0.762" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP17R" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.7" dy="1.7" layer="1" roundness="100" cream="no"/>
+<text x="-0.8499" y="0.8999" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-0.889" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP18R" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.8" dy="1.8" layer="1" roundness="100" cream="no"/>
+<text x="-0.8999" y="0.95" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.762" y="-0.889" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP19R" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.9" dy="1.9" layer="1" roundness="100" cream="no"/>
+<text x="-0.95" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.762" y="-0.889" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP20R" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="2" dy="2" layer="1" roundness="100" cream="no"/>
+<text x="-1" y="1.05" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.762" y="-1.016" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP13SQ" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.3" dy="1.3" layer="1" cream="no"/>
+<text x="-0.65" y="0.7" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-0.762" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP14SQ" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.4" dy="1.4" layer="1" cream="no"/>
+<text x="-0.7" y="0.7501" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-0.762" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP15SQ" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.5" dy="1.5" layer="1" cream="no"/>
+<text x="-0.7501" y="0.8001" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.762" y="-0.889" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP16SQ" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.5996" dy="1.5996" layer="1" cream="no"/>
+<text x="-0.8001" y="0.8499" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.762" y="-0.889" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP17SQ" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.7" dy="1.7" layer="1" cream="no"/>
+<text x="-0.8499" y="0.8999" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.762" y="-0.889" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP18SQ" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.8" dy="1.8" layer="1" cream="no"/>
+<text x="-0.8999" y="0.95" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.889" y="-1.016" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP19SQ" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.8998" dy="1.8998" layer="1" cream="no"/>
+<text x="-0.95" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.889" y="-1.016" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP20SQ" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="2" dy="2" layer="1" cream="no"/>
+<text x="-1" y="1.05" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-1.143" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 </package>
 </packages>
 <symbols>
-<symbol name="TP">
+<symbol name="TP" library_version="1">
+<wire x1="-0.762" y1="-0.762" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-0.762" x2="0" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.524" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
+<text x="-1.27" y="1.27" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="-1.27" size="1.778" layer="97">&gt;TP_SIGNAL_NAME</text>
+<pin name="TP" x="0" y="-2.54" visible="off" length="short" direction="in" rot="R90"/>
+</symbol>
+<symbol name="TP@1">
 <wire x1="0" y1="2.54" x2="-1.27" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="-1.27" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
 <wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.1524" layer="94"/>
@@ -4825,7 +5058,7 @@ TS-003</description>
 <deviceset name="ROUND_SMD" prefix="TP" uservalue="yes">
 <description>Generic round SMD testpad</description>
 <gates>
-<gate name="G$1" symbol="TP" x="0" y="0"/>
+<gate name="G$1" symbol="TP@1" x="0" y="0"/>
 </gates>
 <devices>
 <device name="1MM" package="SMD_ROUND_1MM">
@@ -4856,10 +5089,10 @@ TS-003</description>
 </deviceset>
 <deviceset name="P1-13" prefix="TP" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="TP" x="0" y="0"/>
+<gate name="G$1" symbol="TP@1" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="P1-13">
+<device name="" package="P1-13@1">
 <connects>
 <connect gate="G$1" pin="TP" pad="1"/>
 </connects>
@@ -4872,7 +5105,7 @@ TS-003</description>
 <deviceset name="TP_0812" prefix="TP">
 <description>Testpad hole 0.8mm (32mil)</description>
 <gates>
-<gate name="G$1" symbol="TP" x="0" y="0"/>
+<gate name="G$1" symbol="TP@1" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="TP_0.8_1.2">
@@ -4885,50 +5118,390 @@ TS-003</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TP" prefix="TP">
-<description>Testpad hole 0.8mm (32mil)</description>
+<deviceset name="TP" prefix="TP" library_version="1">
+<description>&lt;b&gt;Test pad&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="TP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="0.8" package="TP_0.8">
+<device name="B1,27" package="B1,27">
 <connects>
-<connect gate="G$1" pin="TP" pad="1"/>
+<connect gate="G$1" pin="TP" pad="TP"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
-<device name="1.2" package="TP_1.2">
+<device name="B2,54" package="B2,54">
 <connects>
-<connect gate="G$1" pin="TP" pad="1"/>
+<connect gate="G$1" pin="TP" pad="TP"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
-<device name="1.2R" package="TP_1.2R">
+<device name="PAD1-13" package="P1-13">
 <connects>
-<connect gate="G$1" pin="TP" pad="1"/>
+<connect gate="G$1" pin="TP" pad="TP"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
-<device name="1.2-3" package="TP_1.2-3">
+<device name="PAD1-13Y" package="P1-13Y">
 <connects>
-<connect gate="G$1" pin="TP" pad="1"/>
+<connect gate="G$1" pin="TP" pad="TP"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
-<device name="1.2R-3" package="TP_1.2R-3">
+<device name="PAD1-17" package="P1-17">
 <connects>
-<connect gate="G$1" pin="TP" pad="1"/>
+<connect gate="G$1" pin="TP" pad="TP"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="PAD1-17Y" package="P1-17Y">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="PAD1-20" package="P1-20">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="PAD1-20Y" package="P1-20Y">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP06R" package="TP06R">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP06SQ" package="TP06SQ">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP07R" package="TP07R">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP07SQ" package="TP07SQ">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP08R" package="TP08R">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP08SQ" package="TP08SQ">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP09R" package="TP09R">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP09SQ" package="TP09SQ">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP10R" package="TP10R">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP10SQ" package="TP10SQ">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP11R" package="TP11R">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP11SQ" package="TP11SQ">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP12SQ" package="TP12SQ">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP12R" package="TP12R">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP13R" package="TP13R">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP14R" package="TP14R">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP15R" package="TP15R">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP16R" package="TP16R">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP17R" package="TP17R">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP18R" package="TP18R">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP19R" package="TP19R">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP20R" package="TP20R">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP13SQ" package="TP13SQ">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP14SQ" package="TP14SQ">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP15SQ" package="TP15SQ">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP16SQ" package="TP16SQ">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP17SQ" package="TP17SQ">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP18SQ" package="TP18SQ">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP19SQ" package="TP19SQ">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TP20SQ" package="TP20SQ">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -17806,6 +18379,68 @@ diameter 5 mm, grid 2.54 mm</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="elock_lib">
+<packages>
+<package name="0039301040">
+<hole x="0" y="-7.3" drill="3"/>
+<pad name="2" x="2.1" y="0" drill="1.8"/>
+<pad name="4" x="2.1" y="5.5" drill="1.8"/>
+<pad name="1" x="-2.1" y="0" drill="1.8"/>
+<pad name="3" x="-2.1" y="5.5" drill="1.8"/>
+<wire x1="-4.8" y1="-1.1" x2="4.8" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="4.8" y1="-1.1" x2="4.8" y2="-13.9" width="0.127" layer="21"/>
+<wire x1="4.8" y1="-13.9" x2="-4.8" y2="-13.9" width="0.127" layer="21"/>
+<wire x1="-4.8" y1="-13.9" x2="-4.8" y2="-1.1" width="0.127" layer="21"/>
+<text x="-3.81" y="7.62" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.08" y="-16.51" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="0039301040">
+<pin name="1" x="-5.08" y="5.08" length="short"/>
+<pin name="3" x="-5.08" y="-2.54" length="short"/>
+<pin name="2" x="-5.08" y="2.54" length="short"/>
+<pin name="4" x="-5.08" y="-5.08" length="short"/>
+<wire x1="-2.54" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="3.175" y2="5.08" width="0.254" layer="94" style="shortdash"/>
+<wire x1="3.175" y1="5.08" x2="3.175" y2="2.54" width="0.254" layer="94" style="shortdash"/>
+<wire x1="3.175" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-2.54" y1="-2.54" x2="3.175" y2="-2.54" width="0.254" layer="94" style="shortdash"/>
+<wire x1="3.175" y1="-2.54" x2="3.175" y2="-5.08" width="0.254" layer="94" style="shortdash"/>
+<wire x1="3.175" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94" style="shortdash"/>
+<text x="-2.54" y="8.255" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-9.525" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="0039301040" prefix="CN">
+<description>MOLEX 2x2 Connector</description>
+<gates>
+<gate name="G$1" symbol="0039301040" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0039301040">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17818,35 +18453,35 @@ diameter 5 mm, grid 2.54 mm</description>
 </class>
 </classes>
 <parts>
-<part name="C2" library="DISCRETE" deviceset="C-0603" device="" value="0.1uF"/>
-<part name="C5" library="DISCRETE" deviceset="C-0603" device="" value="0.1uF"/>
-<part name="R1" library="DISCRETE" deviceset="R-0603" device="" value="47R"/>
-<part name="C7" library="DISCRETE" deviceset="C-0603" device="" value="1u/10V"/>
-<part name="C1" library="DISCRETE" deviceset="C-0603" device="" value="1u/10V"/>
-<part name="C8" library="DISCRETE" deviceset="C-0603" device="" value="1u/10V"/>
-<part name="C6" library="DISCRETE" deviceset="C-0603" device="" value="0.1uF"/>
-<part name="C9" library="DISCRETE" deviceset="C-0603" device="" value="0.1uF"/>
+<part name="C2" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
+<part name="C5" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
+<part name="R1" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="47R"/>
+<part name="C7" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="1u/10V"/>
+<part name="C1" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="1u/10V"/>
+<part name="C8" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="1u/10V"/>
+<part name="C6" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
+<part name="C9" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
 <part name="U$4" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$57" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C10" library="DISCRETE" deviceset="C-0603" device="" value="10uF/4V"/>
+<part name="C10" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="10uF/4V"/>
 <part name="U$62" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="J3" library="CON-pinHeader-AON" deviceset="MA13-2" device=""/>
-<part name="C33" library="DISCRETE" deviceset="C-0603" device="" value="0.1uF"/>
-<part name="C19" library="DISCRETE" deviceset="C-0603" device="" value="18pF"/>
-<part name="C18" library="DISCRETE" deviceset="C-0603" device="" value="18pF"/>
+<part name="C33" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
+<part name="C19" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="18pF"/>
+<part name="C18" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="18pF"/>
 <part name="U$10" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$15" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$16" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$19" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U1" library="LinearTech-AON" deviceset="LTC1955" device=""/>
-<part name="C17" library="DISCRETE" deviceset="C-0603" device="" value="0.1uF"/>
-<part name="C15" library="DISCRETE" deviceset="C-0603" device="" value="1u/10V"/>
-<part name="C20" library="DISCRETE" deviceset="C-0603" device="" value="4.7uF/6.3V"/>
+<part name="C17" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
+<part name="C15" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="1u/10V"/>
+<part name="C20" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="4.7uF/6.3V"/>
 <part name="U$21" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$26" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$58" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$9" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C16" library="DISCRETE" deviceset="C-0603" device="" value="4.7uF/6.3V"/>
+<part name="C16" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="4.7uF/6.3V"/>
 <part name="U$59" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$60" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="IC7" library="NXP-AOM" deviceset="PCF2123" device="TS/1-T"/>
@@ -17857,7 +18492,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="IC1" library="Intersil-U" deviceset="ISL60002" device="DIH325Z-TK"/>
 <part name="U$100" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="IC5" library="NXP-AOM" deviceset="LM75A" device="DP"/>
-<part name="C22" library="DISCRETE" deviceset="C-0603" device="" value="0.1uF"/>
+<part name="C22" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
 <part name="U$96" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$101" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$27" library="SUPPLY" deviceset="+3.3V/1" device=""/>
@@ -17871,18 +18506,18 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="U$61" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$122" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$121" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C29" library="DISCRETE" deviceset="C-0603" device="" value="10uF/10V"/>
+<part name="C29" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="10uF/10V"/>
 <part name="D1" library="InfineonTech-AON" deviceset="BAS70-05" device="" technology="E6327"/>
-<part name="TP9" library="TESTPAD" deviceset="ROUND_SMD" device="0.7MM"/>
-<part name="TP11" library="TESTPAD" deviceset="ROUND_SMD" device="0.7MM"/>
+<part name="TP9" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="ROUND_SMD" device="0.7MM"/>
+<part name="TP11" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="ROUND_SMD" device="0.7MM"/>
 <part name="IC4" library="Microchip-AON" deviceset="PIC10F200T" device="-I/OT"/>
-<part name="C21" library="DISCRETE" deviceset="C-0603" device="" value="0.1uF"/>
+<part name="C21" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
 <part name="U$126" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$127" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="J8" library="CON-pinHeader-AON" deviceset="MA08-2" device="" value="TSW-108-07-G-D"/>
-<part name="TP1" library="TESTPAD" deviceset="ROUND_SMD" device="1MM"/>
-<part name="TP8" library="TESTPAD" deviceset="ROUND_SMD" device="1MM"/>
-<part name="TP7" library="TESTPAD" deviceset="ROUND_SMD" device="1MM"/>
+<part name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="ROUND_SMD" device="1MM"/>
+<part name="TP8" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="ROUND_SMD" device="1MM"/>
+<part name="TP7" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="ROUND_SMD" device="1MM"/>
 <part name="IC6" library="Microchip-AON" deviceset="24*" device="-I/MS" value="24LC32A-I/MS"/>
 <part name="U$35" library="SUPPLY" deviceset="+3.3V/1" device=""/>
 <part name="U$102" library="SUPPLY" deviceset="DGND" device=""/>
@@ -17891,13 +18526,13 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="J5" library="Tyco-U" deviceset="3-641215-2" device=""/>
 <part name="J6" library="Tyco-U" deviceset="3-641215-2" device=""/>
 <part name="Q4" library="TXC_Tech-U" deviceset="7B" device="" technology="-27.120MAAJ-T" value="7B-28.63636MAAJ-T"/>
-<part name="C24" library="DISCRETE" deviceset="C-0603" device="" value="1u/10V"/>
+<part name="C24" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="1u/10V"/>
 <part name="U$18" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="J1" library="CON-Hirose-AON" deviceset="DF11-10DP-2DSA" device="" technology="(01)"/>
 <part name="J11" library="CON-pinHeader-AON" deviceset="MA05-1" device=""/>
-<part name="R13" library="DISCRETE" deviceset="R-0603-0R" device="TOP" value="0R"/>
+<part name="R13" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603-0R" device="TOP" value="0R"/>
 <part name="U$29" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="R8" library="DISCRETE" deviceset="R-0603" device="" value="3.57K"/>
+<part name="R8" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="3.57K"/>
 <part name="R2" library="Panasonic-AON" deviceset="EXB-38" device="" value="100K"/>
 <part name="J10" library="C&amp;K_Components-U" deviceset="CCM03-3504LFT" device="-NR"/>
 <part name="U$87" library="SUPPLY" deviceset="DGND" device=""/>
@@ -17905,9 +18540,9 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="Q5" library="Fairchild-AON" deviceset="FDC6324" device="L"/>
 <part name="R20" library="Panasonic-AON" deviceset="EXB-38" device="" value="100K"/>
 <part name="J12" library="CON-pinHeader-AON" deviceset="MA05-1" device=""/>
-<part name="R15" library="DISCRETE" deviceset="R-0603-0R" device="TOP" value="0R"/>
-<part name="R18" library="DISCRETE" deviceset="R-0603" device="" value="649R"/>
-<part name="R19" library="DISCRETE" deviceset="R-0603" device="" value="649R"/>
+<part name="R15" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603-0R" device="TOP" value="0R"/>
+<part name="R18" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="649R"/>
+<part name="R19" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="649R"/>
 <part name="R21" library="Panasonic-AON" deviceset="EXB-38" device="" value="100K"/>
 <part name="Q7" library="Toshiba-AON" deviceset="SSM6P49" device="PZ" technology="NU,LF"/>
 <part name="U$130" library="SUPPLY" deviceset="DGND" device=""/>
@@ -17916,17 +18551,17 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="J2" library="CON-pinHeader-AON" deviceset="MA07-1" device=""/>
 <part name="U$133" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$23" library="SUPPLY" deviceset="+3.3V/2" device=""/>
-<part name="C4" library="DISCRETE" deviceset="C-0603" device="" value="100nF"/>
-<part name="C25" library="DISCRETE" deviceset="C-0603" device="" value="10nF"/>
-<part name="C26" library="DISCRETE" deviceset="C-0603" device="" value="10nF"/>
-<part name="C12" library="DISCRETE" deviceset="C-0603" device="" value="10nF"/>
-<part name="C13" library="DISCRETE" deviceset="C-0603" device="" value="10nF"/>
+<part name="C4" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="100nF"/>
+<part name="C25" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="10nF"/>
+<part name="C26" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="10nF"/>
+<part name="C12" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="10nF"/>
+<part name="C13" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="10nF"/>
 <part name="FID1" library="technol" deviceset="REF" device=""/>
 <part name="FID2" library="technol" deviceset="REF" device=""/>
-<part name="C14" library="DISCRETE" deviceset="C-0603" device="" value="1u/6.3V"/>
+<part name="C14" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="1u/6.3V"/>
 <part name="IC2" library="TexasInstruments-AON" deviceset="SN65HVD3082E" device="D" value="SN65HVD12D"/>
-<part name="L2" library="DISCRETE" deviceset="L-1206" device="" value="HI1206T500R-00"/>
-<part name="L1" library="DISCRETE" deviceset="L-1206" device="" value="HI1206T500R-00"/>
+<part name="L2" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="L-1206" device="" value="HI1206T500R-00"/>
+<part name="L1" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="L-1206" device="" value="HI1206T500R-00"/>
 <part name="Q3" library="Semtech-AOM" deviceset="SR05" device=".TCT" value="SR3.3.TCT"/>
 <part name="U$158" library="SUPPLY" deviceset="+3.3V/2" device=""/>
 <part name="U$159" library="SUPPLY" deviceset="+3.3V/2" device=""/>
@@ -17937,21 +18572,21 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="U$165" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$166" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="Q2" library="Fairchild-AON" deviceset="FDC6330" device="L"/>
-<part name="R3" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
-<part name="R5" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
+<part name="R3" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
+<part name="R5" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
 <part name="U$167" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$168" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="J7" library="Stewart" deviceset="SS-6566-NF" device=""/>
 <part name="J9" library="Stewart" deviceset="SS-6566-NF" device=""/>
-<part name="R9" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
-<part name="R10" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
-<part name="R11" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
-<part name="C11" library="DISCRETE" deviceset="C-0805" device="" value="4.7uF/16V"/>
+<part name="R9" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
+<part name="R10" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
+<part name="R11" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
+<part name="C11" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0805" device="" value="4.7uF/16V"/>
 <part name="U$172" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="R4" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
-<part name="R6" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
+<part name="R4" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
+<part name="R6" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
 <part name="U$173" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="R14" library="DISCRETE" deviceset="R-0603" device="" value="33K"/>
+<part name="R14" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="33K"/>
 <part name="U$1" library="Frames-AON" deviceset="TABL_L75_LOC" device=""/>
 <part name="U$46" library="Frames-AON" deviceset="TABL_L75_LOC" device=""/>
 <part name="U$49" library="Frames-AON" deviceset="TABL_L75_LOC" device=""/>
@@ -18181,22 +18816,22 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="U$39" library="Frames-AON" deviceset="TABL_L75_LOC" device=""/>
 <part name="Q22" library="Fairchild-AON" deviceset="FDN352" device="AP"/>
 <part name="IC20" library="LinearTech-AON" deviceset="LTC1771" device="EMS8"/>
-<part name="R191" library="DISCRETE" deviceset="R-0603" device="" value="10K"/>
-<part name="C162" library="DISCRETE" deviceset="C-0603" device="" value="220pF"/>
-<part name="C161" library="DISCRETE" deviceset="C-0603" device="" value="0.1uF"/>
+<part name="R191" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="10K"/>
+<part name="C162" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="220pF"/>
+<part name="C161" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
 <part name="U$40" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C159" library="DISCRETE" deviceset="C-0603" device="" value="5pF"/>
+<part name="C159" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="5pF"/>
 <part name="D29" library="st-microelectronics-AOM" deviceset="STPS0540Z" device=""/>
-<part name="C151" library="DISCRETE" deviceset="C-0603" device="" value="1nF"/>
+<part name="C151" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="1nF"/>
 <part name="U$73" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C149" library="DISCRETE" deviceset="C-1210" device="" value="22u/16V"/>
+<part name="C149" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-1210" device="" value="22u/16V"/>
 <part name="U$74" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C157" library="DISCRETE" deviceset="C-1210" device="" value="47u/6.3V"/>
+<part name="C157" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-1210" device="" value="47u/6.3V"/>
 <part name="U$75" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C150" library="DISCRETE" deviceset="C-0603" device="" value="0.1uF"/>
-<part name="R196" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
-<part name="R192" library="DISCRETE" deviceset="R-0603" device="" value="1.65M"/>
-<part name="R188" library="DISCRETE" deviceset="R-0805" device="" value="0.12R"/>
+<part name="C150" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
+<part name="R196" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
+<part name="R192" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1.65M"/>
+<part name="R188" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0805" device="" value="0.12R"/>
 <part name="D27" library="st-microelectronics-AOM" deviceset="SMLVT3V3" device=""/>
 <part name="L13" library="Sumida-UT" deviceset="CR75*" device="" technology="-330KC"/>
 <part name="U$31" library="SUPPLY" deviceset="DGND" device=""/>
@@ -18210,23 +18845,23 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="D25" library="Vishay-AON" deviceset="SS1*" device="" technology="4"/>
 <part name="D26" library="Vishay-AON" deviceset="SS1*" device="" technology="4"/>
 <part name="J43" library="Tyco-U" deviceset="3-641215-4" device=""/>
-<part name="D23" library="DISCRETE" deviceset="LED-0805" device="" value="LED-GR"/>
-<part name="D24" library="DISCRETE" deviceset="LED-0805" device="" value="LED-GR"/>
-<part name="R175" library="DISCRETE" deviceset="R-0805" device="" value="3.3K"/>
-<part name="R176" library="DISCRETE" deviceset="R-0805" device="" value="3.3K"/>
-<part name="R183" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
-<part name="R184" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
-<part name="C142" library="DISCRETE" deviceset="C-1206" device="" value="10uF/35V"/>
+<part name="D23" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="LED-0805" device="" value="LED-GR"/>
+<part name="D24" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="LED-0805" device="" value="LED-GR"/>
+<part name="R175" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0805" device="" value="3.3K"/>
+<part name="R176" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0805" device="" value="3.3K"/>
+<part name="R183" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
+<part name="R184" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
+<part name="C142" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-1206" device="" value="10uF/35V"/>
 <part name="J44" library="Tyco-U" deviceset="3-641215-4" device=""/>
 <part name="U$72" library="SUPPLY" deviceset="VACT" device=""/>
 <part name="Q18" library="Vishay-AON" deviceset="SI4564" device="DY"/>
-<part name="R174" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
-<part name="R170" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
+<part name="R174" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
+<part name="R170" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
 <part name="Q17" library="Touchstone-U" deviceset="TSM9938" device="" technology="HEUK+T"/>
-<part name="R168" library="DISCRETE" deviceset="R-0805" device="" value="0.025R"/>
+<part name="R168" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0805" device="" value="0.025R"/>
 <part name="U$77" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$83" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C135" library="DISCRETE" deviceset="C-1206" device="" value="10uF/35V"/>
+<part name="C135" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-1206" device="" value="10uF/35V"/>
 <part name="U$106" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$128" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$132" library="SUPPLY" deviceset="DGND" device=""/>
@@ -18234,7 +18869,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="U$17" library="SUPPLY" deviceset="+SMB" device=""/>
 <part name="U$24" library="SUPPLY" deviceset="+SMB" device=""/>
 <part name="Q14" library="Touchstone-U" deviceset="TSM9938" device="" technology="HEUK+T"/>
-<part name="R154" library="DISCRETE" deviceset="R-0805" device="" value="0.025R"/>
+<part name="R154" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0805" device="" value="0.025R"/>
 <part name="U$12" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="IC19" library="Microchip-AON" deviceset="MCP6022" device="-I/ST"/>
 <part name="U$32" library="SUPPLY" deviceset="DGND" device=""/>
@@ -18270,58 +18905,58 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="U$224" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="Q23" library="Fairchild-AON" deviceset="FDN352" device="AP"/>
 <part name="IC21" library="LinearTech-AON" deviceset="LTC1771" device="EMS8"/>
-<part name="R193" library="DISCRETE" deviceset="R-0603" device="" value="10K"/>
-<part name="C164" library="DISCRETE" deviceset="C-0603" device="" value="330pF"/>
-<part name="C163" library="DISCRETE" deviceset="C-0603" device="" value="0.1uF"/>
+<part name="R193" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="10K"/>
+<part name="C164" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="330pF"/>
+<part name="C163" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
 <part name="U$11" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C160" library="DISCRETE" deviceset="C-0603" device="" value="15pF"/>
-<part name="C155" library="DISCRETE" deviceset="C-0603" device="" value="1nF"/>
+<part name="C160" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="15pF"/>
+<part name="C155" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="1nF"/>
 <part name="U$220" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C153" library="DISCRETE" deviceset="C-1210" device="" value="22u/16V"/>
+<part name="C153" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-1210" device="" value="22u/16V"/>
 <part name="U$225" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C158" library="DISCRETE" deviceset="C-1210" device="" value="47u/6.3V"/>
+<part name="C158" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-1210" device="" value="47u/6.3V"/>
 <part name="U$226" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C154" library="DISCRETE" deviceset="C-0603" device="" value="0.1uF"/>
-<part name="R197" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
-<part name="R194" library="DISCRETE" deviceset="R-0603" device="" value="3.09M"/>
-<part name="R189" library="DISCRETE" deviceset="R-0805" device="" value="0.047R"/>
+<part name="C154" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
+<part name="R197" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
+<part name="R194" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="3.09M"/>
+<part name="R189" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0805" device="" value="0.047R"/>
 <part name="L14" library="Sumida-UT" deviceset="CR75*" device="" technology="-330KC" value="CR75NP-220KC"/>
 <part name="U$231" library="SUPPLY" deviceset="+SMB" device=""/>
 <part name="U$230" library="SUPPLY" deviceset="+5V" device=""/>
 <part name="D28" library="DiodesInc-AON" deviceset="SMAJ*" device="" technology="5.0A"/>
-<part name="C152" library="DISCRETE" deviceset="C-1210" device="" value="22u/16V"/>
-<part name="C156" library="DISCRETE" deviceset="C-POL-3528" device="" value="TCJB157M006R0045"/>
+<part name="C152" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-1210" device="" value="22u/16V"/>
+<part name="C156" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-POL-3528" device="" value="TCJB157M006R0045"/>
 <part name="U$232" library="SUPPLY" deviceset="+SMB" device=""/>
 <part name="U$160" library="SUPPLY" deviceset="+SMB" device=""/>
 <part name="U$169" library="SUPPLY" deviceset="+SMB" device=""/>
 <part name="U$14" library="SUPPLY" deviceset="+3.3V/1" device=""/>
-<part name="R17" library="DISCRETE" deviceset="R-0603-0R" device="TOP" value="10K"/>
-<part name="R16" library="DISCRETE" deviceset="R-0603-0R" device="TOP" value="10K"/>
+<part name="R17" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603-0R" device="TOP" value="10K"/>
+<part name="R16" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603-0R" device="TOP" value="10K"/>
 <part name="U$22" library="SUPPLY" deviceset="+3.3V" device=""/>
 <part name="U$28" library="SUPPLY" deviceset="+3.3V" device=""/>
 <part name="U$45" library="Frames-AON" deviceset="TABL_L75_LOC" device=""/>
 <part name="IC9" library="TexasInstruments-AON" deviceset="LM3405" device="AXMK/NOPB"/>
-<part name="C27" library="DISCRETE" deviceset="C-1210" device="" value="22u/16V"/>
+<part name="C27" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-1210" device="" value="22u/16V"/>
 <part name="U$316" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C28" library="DISCRETE" deviceset="C-0603" device="" value="1uF/16V"/>
+<part name="C28" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="1uF/16V"/>
 <part name="U$317" library="SUPPLY" deviceset="+SMB" device=""/>
-<part name="C34" library="DISCRETE" deviceset="C-0603" device="" value="dnp"/>
+<part name="C34" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="dnp"/>
 <part name="U$318" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="R23" library="DISCRETE" deviceset="R-0603-0R" device="TOP" value="10K"/>
+<part name="R23" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603-0R" device="TOP" value="10K"/>
 <part name="U$319" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="D20" library="NXP-AOM" deviceset="PMEG3030BEP" device=""/>
 <part name="D22" library="NXP-AOM" deviceset="PMEG3030BEP" device=""/>
 <part name="D30" library="NXP-AOM" deviceset="PMEG3030BEP" device=""/>
 <part name="D4" library="NXP-AOM" deviceset="PMEG3030BEP" device=""/>
 <part name="U$320" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C30" library="DISCRETE" deviceset="C-0603" device="" value="0.1uF"/>
+<part name="C30" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
 <part name="D2" library="st-microelectronics-AOM" deviceset="STPS0540Z" device="" value="DNP"/>
 <part name="L3" library="Taiyo-Yuden-U" deviceset="NRS8030" device="" technology="T150MJGJ"/>
-<part name="C31" library="DISCRETE" deviceset="C-0603" device="" value="1uF/16V"/>
-<part name="C32" library="DISCRETE" deviceset="C-0603" device="" value="1uF/16V"/>
+<part name="C31" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="1uF/16V"/>
+<part name="C32" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="1uF/16V"/>
 <part name="U$321" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="J14" library="Tyco-U" deviceset="3-641215-2" device=""/>
-<part name="R25" library="DISCRETE" deviceset="R-0603-0R" device="TOP" value="0.22R"/>
+<part name="R25" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603-0R" device="TOP" value="0.22R"/>
 <part name="U$322" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="D3" library="st-microelectronics-AOM" deviceset="STPS0540Z" device="" value="STPS0540Z"/>
 <part name="U8" library="Brenneman" deviceset="IC_TI_TPA3111D1" device="PWP" value="TPA3111D1PWP"/>
@@ -18409,36 +19044,36 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="J48" library="Tyco-U" deviceset="3-641215-2" device=""/>
 <part name="U$269" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="IC18" library="FTD-AON" deviceset="FT232RL" device=""/>
-<part name="D17" library="DISCRETE" deviceset="LED-0805" device="" value="LED-GR"/>
-<part name="D19" library="DISCRETE" deviceset="LED-0805" device="" value="LED-GR"/>
-<part name="C121" library="DISCRETE" deviceset="C-0603" device="" value="0.1u"/>
+<part name="D17" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="LED-0805" device="" value="LED-GR"/>
+<part name="D19" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="LED-0805" device="" value="LED-GR"/>
+<part name="C121" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1u"/>
 <part name="U$197" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C114" library="DISCRETE" deviceset="C-0603" device="" value="0.1u"/>
+<part name="C114" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1u"/>
 <part name="U$198" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="J41" library="CON-pinHeader-AON" deviceset="MA06-1" device=""/>
 <part name="U$199" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C115" library="DISCRETE" deviceset="C-0603" device="" value="4.7uF/6.3V"/>
-<part name="R151" library="DISCRETE" deviceset="R-0603" device="" value="470R"/>
-<part name="R152" library="DISCRETE" deviceset="R-0603" device="" value="470R"/>
-<part name="TP60" library="TESTPAD" deviceset="ROUND_SMD" device="0.7MM"/>
-<part name="R187" library="DISCRETE" deviceset="R-0603" device="" value="47K"/>
-<part name="R190" library="DISCRETE" deviceset="R-0603" device="" value="47K"/>
-<part name="R195" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
+<part name="C115" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="4.7uF/6.3V"/>
+<part name="R151" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="470R"/>
+<part name="R152" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="470R"/>
+<part name="TP60" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="ROUND_SMD" device="0.7MM"/>
+<part name="R187" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="47K"/>
+<part name="R190" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="47K"/>
+<part name="R195" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
 <part name="U$196" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C134" library="DISCRETE" deviceset="C-0603" device="" value="10nF"/>
+<part name="C134" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="10nF"/>
 <part name="R159" library="Brenneman" deviceset="R-US_" device="R0603" value="1M">
 <attribute name="MANUFACTURER" value="Panasonic"/>
 <attribute name="MFR_PN" value="ERJ-3GEYJ104V"/>
 </part>
-<part name="R173" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
+<part name="R173" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
 <part name="U$8" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="D21" library="DiodesInc-AON" deviceset="SMAJ*" device="" technology="5.0A" value="SMAJ26A"/>
 <part name="U$203" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="R12" library="DISCRETE" deviceset="R-0603-0R" device="TOP" value="470K"/>
-<part name="R22" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
-<part name="R24" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
-<part name="R7" library="DISCRETE" deviceset="R-0603" device="" value="100K"/>
-<part name="TP12" library="TESTPAD" deviceset="TP_0812" device=""/>
+<part name="R12" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603-0R" device="TOP" value="470K"/>
+<part name="R22" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
+<part name="R24" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
+<part name="R7" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="100K"/>
+<part name="TP12" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP_0812" device=""/>
 <part name="J13" library="TE-Conn-U" deviceset="3-641215-3" device=""/>
 <part name="U$256" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$118" library="SUPPLY" deviceset="+SMB" device=""/>
@@ -18458,15 +19093,15 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="U$340" library="SUPPLY" deviceset="AGND" device=""/>
 <part name="U$176" library="SUPPLY" deviceset="AGND" device=""/>
 <part name="U$304" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="L17" library="DISCRETE" deviceset="L-1206" device="" value="HI1206T500R-00"/>
-<part name="TP64" library="TESTPAD" deviceset="TP" device="0.8"/>
-<part name="TP66" library="TESTPAD" deviceset="TP" device="0.8"/>
-<part name="TP65" library="TESTPAD" deviceset="TP" device="0.8"/>
-<part name="TP67" library="TESTPAD" deviceset="TP" device="0.8"/>
-<part name="TP62" library="TESTPAD" deviceset="TP" device="0.8"/>
-<part name="TP61" library="TESTPAD" deviceset="TP" device="0.8"/>
-<part name="TP63" library="TESTPAD" deviceset="TP" device="0.8"/>
-<part name="TP68" library="TESTPAD" deviceset="TP" device="0.8"/>
+<part name="L17" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="L-1206" device="" value="HI1206T500R-00"/>
+<part name="TP64" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27"/>
+<part name="TP66" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27"/>
+<part name="TP65" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27"/>
+<part name="TP67" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27"/>
+<part name="TP62" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27"/>
+<part name="TP61" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27"/>
+<part name="TP63" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27"/>
+<part name="TP68" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27"/>
 <part name="U$76" library="SUPPLY" deviceset="+3.3V" device=""/>
 <part name="U$305" library="SUPPLY" deviceset="+3.3V" device=""/>
 <part name="U$306" library="SUPPLY" deviceset="+3.3V" device=""/>
@@ -18482,10 +19117,10 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="U$3" library="SUPPLY" deviceset="+3.3V" device=""/>
 <part name="U$30" library="SUPPLY" deviceset="+3.3V" device=""/>
 <part name="U$52" library="SUPPLY" deviceset="+3.3V" device=""/>
-<part name="TP3" library="TESTPAD" deviceset="ROUND_SMD" device="1MM"/>
-<part name="TP4" library="TESTPAD" deviceset="ROUND_SMD" device="1MM"/>
-<part name="TP5" library="TESTPAD" deviceset="ROUND_SMD" device="1MM"/>
-<part name="TP2" library="TESTPAD" deviceset="ROUND_SMD" device="1MM"/>
+<part name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="ROUND_SMD" device="1MM"/>
+<part name="TP4" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="ROUND_SMD" device="1MM"/>
+<part name="TP5" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="ROUND_SMD" device="1MM"/>
+<part name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="ROUND_SMD" device="1MM"/>
 <part name="U$170" library="SUPPLY" deviceset="+SMB" device=""/>
 <part name="U$171" library="SUPPLY" deviceset="+SMB" device=""/>
 <part name="J46" library="TE-Conn-U" deviceset="3-641215-5" device=""/>
@@ -18496,7 +19131,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="R201" library="Brenneman" deviceset="R-US_" device="R0603" value="1M"/>
 <part name="R200" library="Brenneman" deviceset="R-US_" device="R0603" value="1M"/>
 <part name="U$329" library="SUPPLY" deviceset="+3.3V/1" device=""/>
-<part name="TP69" library="TESTPAD" deviceset="P1-13" device=""/>
+<part name="TP69" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="P1-13" device=""/>
 <part name="J49" library="Tyco-U" deviceset="3-641215-2" device=""/>
 <part name="U$330" library="SUPPLY" deviceset="+3.3V/1" device=""/>
 <part name="R199" library="Brenneman" deviceset="R-US_" device="R0603" value="0R">
@@ -18512,7 +19147,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="U$331" library="SUPPLY" deviceset="AGND" device=""/>
 <part name="U$333" library="SUPPLY" deviceset="AGND" device=""/>
 <part name="U$341" library="SUPPLY" deviceset="AGND" device=""/>
-<part name="C172" library="DISCRETE" deviceset="C-0603" device="" value="1uF,25V"/>
+<part name="C172" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="1uF,25V"/>
 <part name="U$342" library="SUPPLY" deviceset="+3.3V/1" device=""/>
 <part name="C187" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="CPOL-US" device="E7.5-18" value="2mF/16V"/>
 <part name="J50" library="CON-PhoenixContac-AON" deviceset="TERM-2" device=""/>
@@ -18522,9 +19157,9 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="U2" library="elocktech_lib" deviceset="HRXL-MAXSONAR-WRC-MB7387" device=""/>
 <part name="U$64" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$68" library="SUPPLY" deviceset="+3.3V/2" device=""/>
-<part name="C35" library="DISCRETE" deviceset="C-0603" device="" value="0.1uF"/>
+<part name="C35" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
 <part name="U$80" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="R26" library="DISCRETE" deviceset="R-0603-0R" device="TOP" value="10K"/>
+<part name="R26" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603-0R" device="TOP" value="10K"/>
 <part name="U$81" library="SUPPLY" deviceset="+3.3V/2" device=""/>
 <part name="U$85" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$86" library="SUPPLY" deviceset="DGND" device=""/>
@@ -18541,13 +19176,13 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="D5" library="Vishay-AON" deviceset="SS1*" device="" technology="4"/>
 <part name="D6" library="Vishay-AON" deviceset="SS1*" device="" technology="4"/>
 <part name="J15" library="Tyco-U" deviceset="3-641215-4" device=""/>
-<part name="D7" library="DISCRETE" deviceset="LED-0805" device="" value="LED-GR"/>
-<part name="D8" library="DISCRETE" deviceset="LED-0805" device="" value="LED-GR"/>
-<part name="R27" library="DISCRETE" deviceset="R-0805" device="" value="3.3K"/>
-<part name="R28" library="DISCRETE" deviceset="R-0805" device="" value="3.3K"/>
-<part name="R29" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
-<part name="R30" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
-<part name="C36" library="DISCRETE" deviceset="C-1206" device="" value="10uF/35V"/>
+<part name="D7" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="LED-0805" device="" value="LED-GR"/>
+<part name="D8" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="LED-0805" device="" value="LED-GR"/>
+<part name="R27" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0805" device="" value="3.3K"/>
+<part name="R28" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0805" device="" value="3.3K"/>
+<part name="R29" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
+<part name="R30" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
+<part name="C36" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-1206" device="" value="10uF/35V"/>
 <part name="J16" library="Tyco-U" deviceset="3-641215-4" device=""/>
 <part name="U$91" library="SUPPLY" deviceset="VACT" device=""/>
 <part name="U$92" library="SUPPLY" deviceset="DGND" device=""/>
@@ -18557,11 +19192,11 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="U$97" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U3" library="SparkFun-AnalogIC" deviceset="ADS1015" device="" value="ADS1015"/>
 <part name="U$99" library="SUPPLY" deviceset="+5V" device=""/>
-<part name="C37" library="DISCRETE" deviceset="C-0603" device="" value="0.1uF"/>
+<part name="C37" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
 <part name="U$103" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$104" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="R31" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
-<part name="R32" library="DISCRETE" deviceset="R-0603" device="" value="1M"/>
+<part name="R31" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
+<part name="R32" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
 <part name="U$107" library="SUPPLY" deviceset="+3.3V/1" device=""/>
 <part name="JP2" library="ChipTestJig" deviceset="M02" device="2.54MM_SCREWTERM"/>
 <part name="JP3" library="ChipTestJig" deviceset="M02" device="2.54MM_SCREWTERM"/>
@@ -18569,18 +19204,19 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="JP5" library="ChipTestJig" deviceset="M02" device="2.54MM_SCREWTERM"/>
 <part name="CN1" library="adafruit" deviceset="DCBARREL" device="PTH"/>
 <part name="U$112" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="R33" library="DISCRETE" deviceset="R-0603" device="" value="4.7K"/>
-<part name="R34" library="DISCRETE" deviceset="R-0603" device="" value="1K"/>
-<part name="R35" library="DISCRETE" deviceset="R-0603" device="" value="3k"/>
-<part name="R36" library="DISCRETE" deviceset="R-0603" device="" value="1k"/>
+<part name="R33" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="4.7K"/>
+<part name="R34" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1K"/>
+<part name="R35" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="3k"/>
+<part name="R36" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1k"/>
 <part name="FID3" library="technol" deviceset="REF" device=""/>
-<part name="C23" library="DISCRETE" deviceset="C-0603" device="" value="10uF/4V"/>
+<part name="C23" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="10uF/4V"/>
 <part name="U$5" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C59" library="DISCRETE" deviceset="C-0603" device="" value="10uF/4V"/>
-<part name="R37" library="DISCRETE" deviceset="R-0603" device="" value="300R"/>
+<part name="C59" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="10uF/4V"/>
+<part name="R37" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="300R"/>
 <part name="U$2" library="SUPPLY" deviceset="+3.3V" device=""/>
 <part name="X2" library="con-cypressindustries" library_urn="urn:adsk.eagle:library:138" deviceset="MINI-USB_4P-" device="85-32004-10X"/>
 <part name="U$6" library="SUPPLY" deviceset="DGND" device=""/>
+<part name="CN2" library="elock_lib" deviceset="0039301040" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22824,6 +23460,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 <attribute name="VALUE" x="442.722" y="253.111" size="1.778" layer="96"/>
 </instance>
 <instance part="U$97" gate="G$1" x="447.04" y="241.3" smashed="yes"/>
+<instance part="CN2" gate="G$1" x="406.4" y="307.34" rot="MR180"/>
 </instances>
 <busses>
 </busses>

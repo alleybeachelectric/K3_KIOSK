@@ -18533,7 +18533,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="H3" library="SparkFun-Hardware" deviceset="STANDOFF_ELECTRICAL" device=""/>
 <part name="H4" library="SparkFun-Hardware" deviceset="STANDOFF_ELECTRICAL" device=""/>
 <part name="H5" library="SparkFun-Hardware" deviceset="STANDOFF_ELECTRICAL" device=""/>
-<part name="H6" library="SparkFun-Hardware" deviceset="STANDOFF_ELECTRICAL" device=""/>
+<part name="H1" library="SparkFun-Hardware" deviceset="STANDOFF_ELECTRICAL" device=""/>
 <part name="X1" library="con-hirose" deviceset="FH12-10S-0.5S" device="1.00MM" value="FH12-10S-0.5S1.00MM"/>
 <part name="U$90" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="Q8" library="InfineonTech-AON" deviceset="IPD30N06S2L-23" device=""/>
@@ -19234,12 +19234,12 @@ diameter 5 mm, grid 2.54 mm</description>
 <instance part="U$81" gate="A" x="373.38" y="220.98" smashed="yes"/>
 <instance part="U$85" gate="G$1" x="500.38" y="50.8" smashed="yes" rot="MR0"/>
 <instance part="U$86" gate="G$1" x="508" y="50.8" smashed="yes" rot="MR0"/>
-<instance part="U$89" gate="G$1" x="523.24" y="50.8" smashed="yes" rot="MR0"/>
+<instance part="U$89" gate="G$1" x="485.14" y="50.8" smashed="yes" rot="MR0"/>
 <instance part="H2" gate="G$1" x="492.76" y="66.04" rot="R270"/>
 <instance part="H3" gate="G$1" x="500.38" y="66.04" rot="R270"/>
 <instance part="H4" gate="G$1" x="508" y="66.04" rot="R270"/>
 <instance part="H5" gate="G$1" x="515.62" y="66.04" rot="R270"/>
-<instance part="H6" gate="G$1" x="523.24" y="66.04" rot="R270"/>
+<instance part="H1" gate="G$1" x="485.14" y="66.04" rot="R270"/>
 <instance part="X1" gate="-1" x="327.66" y="231.14"/>
 <instance part="X1" gate="-2" x="327.66" y="228.6"/>
 <instance part="X1" gate="-3" x="327.66" y="226.06"/>
@@ -20068,8 +20068,8 @@ diameter 5 mm, grid 2.54 mm</description>
 </segment>
 <segment>
 <pinref part="U$89" gate="G$1" pin="DGND"/>
-<pinref part="H6" gate="G$1" pin="P$1"/>
-<wire x1="523.24" y1="58.42" x2="523.24" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="H1" gate="G$1" pin="P$1"/>
+<wire x1="485.14" y1="58.42" x2="485.14" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X1" gate="-7" pin="1"/>
@@ -21517,6 +21517,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <text x="60.96" y="264.16" size="1.778" layer="94">18V in</text>
 <text x="101.6" y="243.84" size="1.778" layer="97">3.158V @18Vin</text>
 <text x="101.6" y="233.68" size="1.778" layer="97">3.000V @12Vin</text>
+<text x="50.8" y="182.88" size="1.778" layer="94"></text>
 </plain>
 <instances>
 <instance part="U$46" gate="G$1" x="0" y="0"/>
@@ -22037,6 +22038,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 <wire x1="38.1" y1="78.74" x2="40.64" y2="58.42" width="0.1524" layer="94"/>
 <wire x1="40.64" y1="58.42" x2="40.64" y2="60.96" width="0.1524" layer="94"/>
 <wire x1="38.1" y1="78.74" x2="38.1" y2="76.2" width="0.1524" layer="94"/>
+<text x="396.24" y="292.1" size="1.778" layer="94">replace j50 with 4 pin (2x2) molex, similar to PSU</text>
 </plain>
 <instances>
 <instance part="U$37" gate="G$1" x="0" y="0" smashed="yes"/>

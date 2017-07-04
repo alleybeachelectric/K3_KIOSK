@@ -2002,13 +2002,6 @@ Panasonic size 23</description>
 <text x="-1.7144" y="-2.6989" size="1.016" layer="94" ratio="10">AGND</text>
 <pin name="AGND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="+3.3V/7">
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
-<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-3.81" y="3.175" size="1.524" layer="94">+3.3V/7</text>
-<pin name="+3.3V/7" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="+3.3V" uservalue="yes">
@@ -2098,18 +2091,6 @@ Panasonic size 23</description>
 <deviceset name="AGND">
 <gates>
 <gate name="G$1" symbol="AGND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="+3.3V/7">
-<gates>
-<gate name="G$1" symbol="+3.3V/7" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -11105,7 +11086,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <part name="R19" library="DISCRETE" deviceset="R-0603" device="" value="649R"/>
 <part name="R21" library="Panasonic-AON" deviceset="EXB-38" device="" value="100K"/>
 <part name="Q7" library="Toshiba-AON" deviceset="SSM6P49" device="PZ" technology="NU,LF"/>
-<part name="Q1" library="Toshiba-AON" deviceset="SSM6P49" device="PZ" technology="NU,LF"/>
 <part name="U$130" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$131" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="IC8" library="Micron-U" deviceset="M25P16" device="-VMN6P"/>
@@ -11680,10 +11660,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <part name="U$3" library="SUPPLY" deviceset="+3.3V" device=""/>
 <part name="U$30" library="SUPPLY" deviceset="+3.3V" device=""/>
 <part name="U$52" library="SUPPLY" deviceset="+3.3V" device=""/>
-<part name="U$229" library="SUPPLY" deviceset="+3.3V" device=""/>
-<part name="C23" library="DISCRETE" deviceset="C-0603" device="" value="10uF/10V"/>
-<part name="U$310" library="SUPPLY" deviceset="+3.3V/7" device=""/>
-<part name="U$218" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="TP3" library="TESTPAD" deviceset="ROUND_SMD" device="1MM"/>
 <part name="TP4" library="TESTPAD" deviceset="ROUND_SMD" device="1MM"/>
 <part name="TP5" library="TESTPAD" deviceset="ROUND_SMD" device="1MM"/>
@@ -12407,11 +12383,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <instance part="U$3" gate="G$1" x="309.88" y="256.54" rot="R90"/>
 <instance part="U$30" gate="G$1" x="337.82" y="307.34" rot="R180"/>
 <instance part="U$52" gate="G$1" x="15.24" y="60.96"/>
-<instance part="Q1" gate="-B" x="45.72" y="104.14" rot="MR90"/>
-<instance part="U$229" gate="G$1" x="17.78" y="111.76"/>
-<instance part="C23" gate="G$1" x="17.78" y="104.14" rot="R180"/>
-<instance part="U$310" gate="G$1" x="53.34" y="111.76"/>
-<instance part="U$218" gate="G$1" x="17.78" y="96.52" smashed="yes"/>
 <instance part="TP3" gate="G$1" x="172.72" y="243.84" smashed="yes" rot="R90">
 <attribute name="NAME" x="164.1475" y="243.5225" size="1.524" layer="95"/>
 </instance>
@@ -13249,10 +13220,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <pinref part="U$256" gate="G$1" pin="DGND"/>
 </segment>
 <segment>
-<pinref part="C23" gate="G$1" pin="1"/>
-<pinref part="U$218" gate="G$1" pin="DGND"/>
-</segment>
-<segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
 <wire x1="411.48" y1="203.2" x2="414.02" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="414.02" y1="203.2" x2="414.02" y2="200.66" width="0.1524" layer="91"/>
@@ -13522,13 +13489,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <wire x1="261.62" y1="259.08" x2="281.94" y2="259.08" width="0.1524" layer="91"/>
 <label x="266.7" y="259.3975" size="1.778" layer="95"/>
 <pinref part="IC3" gate="G$1" pin="CN60/RE2"/>
-</segment>
-</net>
-<net name="/MH_PWR" class="0">
-<segment>
-<wire x1="261.62" y1="195.58" x2="281.94" y2="195.58" width="0.1524" layer="91"/>
-<label x="266.7" y="195.8975" size="1.778" layer="95"/>
-<pinref part="IC3" gate="G$1" pin="CN80/RG13"/>
 </segment>
 </net>
 <net name="XB_SLEEP" class="0">
@@ -14407,14 +14367,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <pinref part="U$52" gate="G$1" pin="+3.3V"/>
 <junction x="15.24" y="58.42"/>
 </segment>
-<segment>
-<pinref part="U$229" gate="G$1" pin="+3.3V"/>
-<pinref part="C23" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="109.22" x2="17.78" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="-B" pin="S"/>
-<wire x1="17.78" y1="106.68" x2="40.64" y2="106.68" width="0.1524" layer="91"/>
-<junction x="17.78" y="106.68"/>
-</segment>
 </net>
 <net name="ISENSEA" class="0">
 <segment>
@@ -14635,30 +14587,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <wire x1="198.12" y1="294.64" x2="175.26" y2="294.64" width="0.1524" layer="91"/>
 <label x="175.26" y="294.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="IC3" gate="G$1" pin="RA5/TDO/CN38"/>
-</segment>
-</net>
-<net name="/3.3V/7_ON" class="0">
-<segment>
-<pinref part="Q1" gate="-B" pin="G"/>
-<wire x1="43.18" y1="101.6" x2="43.18" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="99.06" x2="25.4" y2="99.06" width="0.1524" layer="91"/>
-<label x="26.035" y="99.3775" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="261.62" y1="193.04" x2="281.94" y2="193.04" width="0.1524" layer="91"/>
-<label x="266.7" y="193.3575" size="1.778" layer="95"/>
-<pinref part="IC3" gate="G$1" pin="CN79/RG12"/>
-</segment>
-</net>
-<net name="+3.3V/7" class="0">
-<segment>
-<pinref part="Q1" gate="-B" pin="D1"/>
-<wire x1="50.8" y1="109.22" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="109.22" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="-B" pin="D"/>
-<wire x1="53.34" y1="106.68" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="U$310" gate="G$1" pin="+3.3V/7"/>
-<junction x="53.34" y="109.22"/>
 </segment>
 </net>
 <net name="N$44" class="0">
