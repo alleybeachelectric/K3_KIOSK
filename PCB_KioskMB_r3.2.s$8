@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.1">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11316,7 +11316,7 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="USB_Data" width="0.32" drill="0">
+<class number="1" name="USB_Data" width="0.1524" drill="0">
 <clearance class="1" value="0.18"/>
 </class>
 </classes>
@@ -11375,7 +11375,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <part name="U$110" library="SUPPLY" deviceset="+3.3V/2" device=""/>
 <part name="U$34" library="SUPPLY" deviceset="+3.3V/1" device=""/>
 <part name="U$115" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="U$5" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$61" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$122" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$121" library="SUPPLY" deviceset="DGND" device=""/>
@@ -11430,8 +11429,8 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <part name="C26" library="DISCRETE" deviceset="C-0603" device="" value="10nF"/>
 <part name="C12" library="DISCRETE" deviceset="C-0603" device="" value="10nF"/>
 <part name="C13" library="DISCRETE" deviceset="C-0603" device="" value="10nF"/>
-<part name="F1" library="technol" deviceset="REF" device=""/>
-<part name="F2" library="technol" deviceset="REF" device=""/>
+<part name="FID1" library="technol" deviceset="REF" device=""/>
+<part name="FID2" library="technol" deviceset="REF" device=""/>
 <part name="C14" library="DISCRETE" deviceset="C-0603" device="" value="1u/6.3V"/>
 <part name="IC2" library="TexasInstruments-AON" deviceset="SN65HVD3082E" device="D" value="SN65HVD12D"/>
 <part name="L2" library="DISCRETE" deviceset="L-1206" device="" value="HI1206T500R-00"/>
@@ -12031,7 +12030,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <part name="U$341" library="SUPPLY" deviceset="AGND" device=""/>
 <part name="C172" library="DISCRETE" deviceset="C-0603" device="" value="1uF,25V"/>
 <part name="U$342" library="SUPPLY" deviceset="+3.3V/1" device=""/>
-<part name="TP10" library="TESTPAD" deviceset="ROUND_SMD" device="1MM"/>
 <part name="C187" library="DISCRETE" deviceset="ELC-7,5" device="" value="2mF/16V"/>
 <part name="J50" library="CON-PhoenixContac-AON" deviceset="TERM-2" device=""/>
 <part name="U$47" library="SUPPLY" deviceset="DGND" device=""/>
@@ -12048,7 +12046,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <part name="U$85" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$86" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$89" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="H1" library="SparkFun-Hardware" deviceset="STANDOFF_ELECTRICAL" device=""/>
 <part name="H2" library="SparkFun-Hardware" deviceset="STANDOFF_ELECTRICAL" device=""/>
 <part name="H3" library="SparkFun-Hardware" deviceset="STANDOFF_ELECTRICAL" device=""/>
 <part name="H4" library="SparkFun-Hardware" deviceset="STANDOFF_ELECTRICAL" device=""/>
@@ -12094,6 +12091,7 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <part name="R34" library="DISCRETE" deviceset="R-0603" device="" value="1K"/>
 <part name="R35" library="DISCRETE" deviceset="R-0603" device="" value="3k"/>
 <part name="R36" library="DISCRETE" deviceset="R-0603" device="" value="1k"/>
+<part name="FID3" library="technol" deviceset="REF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12187,7 +12185,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <text x="263.2075" y="287.3375" size="1.27" layer="94">O</text>
 <text x="263.2075" y="272.0975" size="1.27" layer="94">O</text>
 <text x="195.2625" y="289.8775" size="1.27" layer="94">O</text>
-<text x="195.2625" y="292.4175" size="1.27" layer="94">O</text>
 <text x="193.675" y="282.2575" size="1.27" layer="94">I/O</text>
 <text x="193.675" y="279.7175" size="1.27" layer="94">I/O</text>
 <wire x1="233.68" y1="71.12" x2="233.68" y2="81.28" width="0.1524" layer="94"/>
@@ -12344,7 +12341,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <instance part="U$110" gate="A" x="353.06" y="269.24" smashed="yes"/>
 <instance part="U$34" gate="G$1" x="208.28" y="111.76" smashed="yes"/>
 <instance part="U$115" gate="G$1" x="15.24" y="48.26" smashed="yes"/>
-<instance part="U$5" gate="G$1" x="485.14" y="50.8" smashed="yes" rot="MR0"/>
 <instance part="U$61" gate="G$1" x="492.76" y="50.8" smashed="yes" rot="MR0"/>
 <instance part="U$122" gate="G$1" x="29.21" y="307.34" smashed="yes"/>
 <instance part="U$121" gate="G$1" x="20.32" y="10.16" smashed="yes"/>
@@ -12540,10 +12536,10 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <attribute name="NAME" x="67.6275" y="314.6425" size="1.524" layer="95"/>
 <attribute name="VALUE" x="67.6275" y="311.15" size="1.524" layer="96"/>
 </instance>
-<instance part="F1" gate="G$1" x="454.66" y="45.72" smashed="yes">
+<instance part="FID1" gate="G$1" x="454.66" y="45.72" smashed="yes">
 <attribute name="NAME" x="453.39" y="44.45" size="1.778" layer="95"/>
 </instance>
-<instance part="F2" gate="G$1" x="469.9" y="45.72" smashed="yes">
+<instance part="FID2" gate="G$1" x="469.9" y="45.72" smashed="yes">
 <attribute name="NAME" x="466.09" y="44.45" size="1.778" layer="95"/>
 </instance>
 <instance part="C14" gate="G$1" x="431.8" y="246.38" smashed="yes">
@@ -12755,9 +12751,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 </instance>
 <instance part="U$170" gate="G$1" x="500.38" y="256.54" rot="R180"/>
 <instance part="U$171" gate="G$1" x="500.38" y="228.6" rot="R180"/>
-<instance part="TP10" gate="G$1" x="157.48" y="292.1" smashed="yes" rot="R90">
-<attribute name="NAME" x="148.9075" y="291.465" size="1.524" layer="95"/>
-</instance>
 <instance part="U2" gate="G$1" x="386.08" y="200.66"/>
 <instance part="U$64" gate="G$1" x="414.02" y="198.12" smashed="yes"/>
 <instance part="U$68" gate="A" x="414.02" y="215.9" smashed="yes"/>
@@ -12774,7 +12767,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <instance part="U$85" gate="G$1" x="500.38" y="50.8" smashed="yes" rot="MR0"/>
 <instance part="U$86" gate="G$1" x="508" y="50.8" smashed="yes" rot="MR0"/>
 <instance part="U$89" gate="G$1" x="523.24" y="50.8" smashed="yes" rot="MR0"/>
-<instance part="H1" gate="G$1" x="485.14" y="66.04" rot="R270"/>
 <instance part="H2" gate="G$1" x="492.76" y="66.04" rot="R270"/>
 <instance part="H3" gate="G$1" x="500.38" y="66.04" rot="R270"/>
 <instance part="H4" gate="G$1" x="508" y="66.04" rot="R270"/>
@@ -12791,6 +12783,9 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <instance part="X1" gate="-9" x="327.66" y="210.82"/>
 <instance part="X1" gate="-10" x="327.66" y="208.28"/>
 <instance part="U$90" gate="G$1" x="307.34" y="208.28" smashed="yes"/>
+<instance part="FID3" gate="G$1" x="469.9" y="53.34" smashed="yes">
+<attribute name="NAME" x="466.09" y="52.07" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -13363,11 +13358,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <wire x1="353.06" y1="256.54" x2="340.36" y2="256.54" width="0.1524" layer="91"/>
 <pinref part="U$60" gate="G$1" pin="DGND"/>
 <pinref part="J8" gate="G$1" pin="9"/>
-</segment>
-<segment>
-<pinref part="U$5" gate="G$1" pin="DGND"/>
-<pinref part="H1" gate="G$1" pin="P$1"/>
-<wire x1="485.14" y1="58.42" x2="485.14" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$61" gate="G$1" pin="DGND"/>
@@ -14218,11 +14208,8 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <junction x="431.8" y="251.46"/>
 </segment>
 <segment>
-<wire x1="472.44" y1="254" x2="467.36" y2="254" width="0.1524" layer="91"/>
-<pinref part="Q3" gate="G$1" pin="4"/>
 <pinref part="U$159" gate="A" pin="+3.3V/2"/>
 <pinref part="R11" gate="G$1" pin="2"/>
-<junction x="472.44" y="254"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VCC"/>
@@ -15076,14 +15063,6 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <pinref part="IC3" gate="G$1" pin="RA4/TDI/CN37"/>
 <pinref part="TP2" gate="G$1" pin="TP"/>
 <wire x1="175.26" y1="297.18" x2="198.12" y2="297.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="WAS_ETH_ON" class="0">
-<segment>
-<wire x1="198.12" y1="292.1" x2="160.02" y2="292.1" width="0.1524" layer="91"/>
-<label x="177.8" y="292.4175" size="1.778" layer="95"/>
-<pinref part="IC3" gate="G$1" pin="RA6/CN39"/>
-<pinref part="TP10" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$9" class="0">
