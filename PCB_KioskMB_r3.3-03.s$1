@@ -18777,6 +18777,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="J50" library="elock_lib" deviceset="0039301040" device=""/>
 <part name="C3" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="10uF/4V"/>
 <part name="C38" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="10uF/4V"/>
+<part name="U$41" library="SUPPLY" deviceset="DGND" device=""/>
+<part name="H6" library="SparkFun-Hardware" deviceset="STANDOFF_ELECTRICAL" device=""/>
 <part name="C39" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="10uF/4V"/>
 <part name="C40" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
 <part name="U$63" library="SUPPLY" deviceset="DGND" device=""/>
@@ -18825,7 +18827,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="FID4" library="technol" deviceset="REF" device=""/>
 <part name="TP6" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="ROUND_SMD" device="1MM"/>
 <part name="TP10" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="ROUND_SMD" device="1MM"/>
-<part name="U$30" library="SUPPLY" deviceset="DGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19493,6 +19494,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <attribute name="NAME" x="248.92" y="312.7375" size="1.524" layer="95"/>
 <attribute name="VALUE" x="246.0625" y="310.1975" size="1.524" layer="96"/>
 </instance>
+<instance part="U$41" gate="G$1" x="523.24" y="50.8" smashed="yes" rot="MR0"/>
+<instance part="H6" gate="G$1" x="523.24" y="66.04" rot="R270"/>
 <instance part="R27" gate="G$1" x="467.36" y="119.38" smashed="yes" rot="MR270">
 <attribute name="NAME" x="465.9884" y="121.92" size="1.524" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="469.9635" y="121.92" size="1.524" layer="96" rot="MR270"/>
@@ -19540,7 +19543,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <instance part="TP10" gate="G$1" x="284.48" y="200.66" smashed="yes" rot="R270">
 <attribute name="NAME" x="293.0525" y="201.295" size="1.524" layer="95" rot="R180"/>
 </instance>
-<instance part="U$30" gate="G$1" x="452.12" y="167.64" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -20400,20 +20402,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="518.16" y1="340.36" x2="502.92" y2="340.36" width="0.1524" layer="91"/>
 <label x="502.92" y="340.36" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$1" pin="5"/>
-<wire x1="447.04" y1="190.5" x2="452.12" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="452.12" y1="190.5" x2="452.12" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="U$30" gate="G$1" pin="DGND"/>
-<pinref part="J3" gate="G$1" pin="12"/>
-<wire x1="452.12" y1="175.26" x2="452.12" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="452.12" y1="172.72" x2="452.12" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="447.04" y1="172.72" x2="452.12" y2="172.72" width="0.1524" layer="91"/>
-<junction x="452.12" y="172.72"/>
-<pinref part="J3" gate="G$1" pin="11"/>
-<wire x1="447.04" y1="175.26" x2="452.12" y2="175.26" width="0.1524" layer="91"/>
-<junction x="452.12" y="175.26"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -21790,6 +21778,11 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="284.48" y1="335.28" x2="294.64" y2="335.28" width="0.1524" layer="91"/>
 <junction x="284.48" y="335.28"/>
 <pinref part="R37" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="DGND1" class="0">
+<segment>
+<wire x1="523.24" y1="58.42" x2="523.24" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MIC_AMP_EN" class="0">
