@@ -3189,10 +3189,10 @@ TO SBC</text>
 <text x="27.686" y="12.7" size="1.778" layer="22" font="vector" ratio="12" rot="MR270" align="center-left">3.3V/2</text>
 <text x="30.353" y="-1.016" size="1.778" layer="22" font="vector" ratio="12" rot="MR270" align="center-left">US-S_O</text>
 <text x="32.893" y="-0.889" size="1.778" layer="22" font="vector" ratio="12" rot="MR270" align="center-left">USRF_EN</text>
-<text x="43.307" y="12.065" size="1.016" layer="22" font="vector" ratio="12" rot="MR270" align="center-left">DOOR2_L_SW</text>
-<text x="48.387" y="11.684" size="1.016" layer="22" font="vector" ratio="12" rot="MR270" align="center-left">DOOR2_R_SW</text>
-<text x="53.721" y="11.811" size="1.016" layer="22" font="vector" ratio="12" rot="MR270" align="center-left">DOOR1_L_SW</text>
-<text x="58.674" y="11.684" size="1.016" layer="22" font="vector" ratio="12" rot="MR270" align="center-left">DOOR1_R_SW</text>
+<text x="43.307" y="-1.143" size="1.778" layer="22" font="vector" ratio="12" rot="MR270" align="center-left">DOOR2_L_SW</text>
+<text x="48.387" y="-1.016" size="1.778" layer="22" font="vector" ratio="12" rot="MR270" align="center-left">DOOR2_R_SW</text>
+<text x="53.721" y="-0.889" size="1.778" layer="22" font="vector" ratio="12" rot="MR270" align="center-left">DOOR1_L_SW</text>
+<text x="58.928" y="-1.016" size="1.778" layer="22" font="vector" ratio="12" rot="MR270" align="center-left">DOOR1_R_SW</text>
 <text x="63.754" y="12.192" size="1.778" layer="22" font="vector" ratio="12" rot="MR270" align="center-left">BTN_1</text>
 <text x="68.834" y="12.192" size="1.778" layer="22" font="vector" ratio="12" rot="MR270" align="center-left">BTN_2</text>
 <text x="110.744" y="11.684" size="1.778" layer="22" font="vector" ratio="12" rot="MR270" align="center-left">C8A</text>
