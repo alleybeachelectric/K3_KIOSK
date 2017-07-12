@@ -18164,17 +18164,17 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="R13" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603-0R" device="TOP" value="0R"/>
 <part name="U$29" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="R8" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="3.57K"/>
-<part name="R2" library="Panasonic-AON" deviceset="EXB-38" device="" value="4x100K"/>
+<part name="R2" library="Panasonic-AON" deviceset="EXB-38" device="" value="4x100K "/>
 <part name="J10" library="C&amp;K_Components-U" deviceset="CCM03-3504LFT" device="-NR"/>
 <part name="U$87" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$88" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="Q5" library="Fairchild-AON" deviceset="FDC6324" device="L" value="FDC6330L"/>
-<part name="R20" library="Panasonic-AON" deviceset="EXB-38" device="" value="4x100K"/>
+<part name="R20" library="Panasonic-AON" deviceset="EXB-38" device="" value="100K"/>
 <part name="J12" library="CON-pinHeader-AON" deviceset="MA05-1" device="" value="DNP"/>
 <part name="R15" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603-0R" device="TOP" value="0R"/>
 <part name="R18" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="649R"/>
 <part name="R19" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="649R"/>
-<part name="R21" library="Panasonic-AON" deviceset="EXB-38" device="" value="4x100K"/>
+<part name="R21" library="Panasonic-AON" deviceset="EXB-38" device="" value="100K"/>
 <part name="Q7" library="Toshiba-AON" deviceset="SSM6P49" device="PZ" technology="NU,LF"/>
 <part name="U$131" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="IC8" library="Micron-U" deviceset="M25P16" device="-VMN6P"/>
@@ -18520,6 +18520,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="U$160" library="SUPPLY" deviceset="+SMB" device=""/>
 <part name="U$169" library="SUPPLY" deviceset="+SMB" device=""/>
 <part name="U$14" library="SUPPLY" deviceset="+3.3V/1" device=""/>
+<part name="R17" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603-0R" device="TOP" value="10K"/>
+<part name="R16" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603-0R" device="TOP" value="10K"/>
 <part name="U$22" library="SUPPLY" deviceset="+3.3V" device=""/>
 <part name="U$28" library="SUPPLY" deviceset="+3.3V" device=""/>
 <part name="U$45" library="Frames-AON" deviceset="TABL_L75_LOC" device=""/>
@@ -18544,6 +18546,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="C32" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="1uF/16V"/>
 <part name="U$321" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="J14" library="Tyco-U" deviceset="3-641215-2" device=""/>
+<part name="R25" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603-0R" device="TOP" value="0.22R"/>
 <part name="U$322" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="D3" library="st-microelectronics-AOM" deviceset="STPS0540Z" device="" value="STPS0540Z"/>
 <part name="U8" library="Brenneman" deviceset="IC_TI_TPA3111D1" device="PWP" value="TPA3111D1PWP"/>
@@ -18804,7 +18807,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="U$81" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="R27" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="649R"/>
 <part name="R28" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="649R"/>
-<part name="R29" library="Panasonic-AON" deviceset="EXB-38" device="" value="4x100K"/>
+<part name="R29" library="Panasonic-AON" deviceset="EXB-38" device="" value="100K"/>
 <part name="C36" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="10nF"/>
 <part name="C47" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="10nF"/>
 <part name="U$94" library="SUPPLY" deviceset="DGND" device=""/>
@@ -18821,9 +18824,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="TP6" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="ROUND_SMD" device="1MM"/>
 <part name="TP10" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="ROUND_SMD" device="1MM"/>
 <part name="U$30" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="R26" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="0.22R"/>
-<part name="R25" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="10K"/>
-<part name="R30" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -19331,6 +19331,14 @@ diameter 5 mm, grid 2.54 mm</description>
 <instance part="U$160" gate="G$1" x="429.26" y="299.72"/>
 <instance part="U$169" gate="G$1" x="447.04" y="332.74"/>
 <instance part="U$14" gate="G$1" x="180.34" y="134.62" smashed="yes"/>
+<instance part="R17" gate="R" x="180.34" y="119.38" smashed="yes" rot="R90">
+<attribute name="NAME" x="178.9684" y="116.84" size="1.524" layer="95" rot="R90"/>
+<attribute name="VALUE" x="182.9435" y="116.84" size="1.524" layer="96" rot="R90"/>
+</instance>
+<instance part="R16" gate="R" x="175.26" y="124.46" smashed="yes" rot="R90">
+<attribute name="NAME" x="173.8884" y="121.92" size="1.524" layer="95" rot="R90"/>
+<attribute name="VALUE" x="177.8635" y="121.92" size="1.524" layer="96" rot="R90"/>
+</instance>
 <instance part="IC9" gate="G$1" x="200.66" y="63.5"/>
 <instance part="C27" gate="G$1" x="162.56" y="71.12" smashed="yes">
 <attribute name="NAME" x="156.5275" y="72.39" size="1.524" layer="95"/>
@@ -19375,6 +19383,10 @@ diameter 5 mm, grid 2.54 mm</description>
 <instance part="J14" gate="G$1" x="279.4" y="71.12" smashed="yes" rot="MR0">
 <attribute name="NAME" x="282.2575" y="74.1045" size="1.524" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="289.8775" y="64.135" size="1.524" layer="96" rot="MR0"/>
+</instance>
+<instance part="R25" gate="R" x="254" y="45.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="252.6284" y="43.18" size="1.524" layer="95" rot="R90"/>
+<attribute name="VALUE" x="256.6035" y="43.18" size="1.524" layer="96" rot="R90"/>
 </instance>
 <instance part="U$322" gate="G$1" x="254" y="35.56" smashed="yes"/>
 <instance part="D3" gate="G$1" x="226.06" y="81.28" smashed="yes" rot="R180">
@@ -19523,18 +19535,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <attribute name="NAME" x="293.0525" y="201.295" size="1.524" layer="95" rot="R180"/>
 </instance>
 <instance part="U$30" gate="G$1" x="452.12" y="167.64" smashed="yes"/>
-<instance part="R26" gate="G$1" x="254" y="45.72" smashed="yes" rot="MR270">
-<attribute name="NAME" x="252.6284" y="48.26" size="1.524" layer="95" rot="MR270"/>
-<attribute name="VALUE" x="256.6035" y="48.26" size="1.524" layer="96" rot="MR270"/>
-</instance>
-<instance part="R25" gate="G$1" x="180.34" y="119.38" smashed="yes" rot="MR270">
-<attribute name="NAME" x="178.9684" y="121.92" size="1.524" layer="95" rot="MR270"/>
-<attribute name="VALUE" x="182.9435" y="121.92" size="1.524" layer="96" rot="MR270"/>
-</instance>
-<instance part="R30" gate="G$1" x="175.26" y="124.46" smashed="yes" rot="MR270">
-<attribute name="NAME" x="173.8884" y="127" size="1.524" layer="95" rot="MR270"/>
-<attribute name="VALUE" x="177.8635" y="127" size="1.524" layer="96" rot="MR270"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -20273,9 +20273,9 @@ diameter 5 mm, grid 2.54 mm</description>
 <pinref part="U$321" gate="G$1" pin="DGND"/>
 </segment>
 <segment>
+<pinref part="R25" gate="R" pin="1"/>
 <pinref part="U$322" gate="G$1" pin="DGND"/>
-<pinref part="R26" gate="G$1" pin="2"/>
-<wire x1="254" y1="40.64" x2="254" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="254" y1="38.1" x2="254" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$269" gate="G$1" pin="DGND"/>
@@ -20744,8 +20744,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <pinref part="IC5" gate="G$1" pin="SCL"/>
 <wire x1="175.26" y1="106.68" x2="165.1" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="106.68" x2="175.26" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="R16" gate="R" pin="1"/>
 <junction x="175.26" y="106.68"/>
-<pinref part="R30" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="325.12" y1="248.92" x2="312.42" y2="248.92" width="0.1524" layer="91"/>
@@ -20769,8 +20769,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <label x="166.0525" y="109.5375" size="1.778" layer="95"/>
 <pinref part="IC5" gate="G$1" pin="SDA"/>
 <junction x="180.34" y="109.22"/>
+<pinref part="R17" gate="R" pin="1"/>
 <wire x1="180.34" y1="109.22" x2="180.34" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="R25" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="340.36" y1="248.92" x2="353.06" y2="248.92" width="0.1524" layer="91"/>
@@ -20835,9 +20835,9 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="175.26" y1="132.08" x2="180.34" y2="132.08" width="0.1524" layer="91"/>
 <junction x="180.34" y="132.08"/>
 <pinref part="U$14" gate="G$1" pin="+3.3V/1"/>
+<pinref part="R16" gate="R" pin="2"/>
+<pinref part="R17" gate="R" pin="2"/>
 <wire x1="180.34" y1="124.46" x2="180.34" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="R30" gate="G$1" pin="1"/>
-<pinref part="R25" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U$93" gate="G$1" pin="+3.3V/1"/>
@@ -21558,13 +21558,13 @@ diameter 5 mm, grid 2.54 mm</description>
 <pinref part="C31" gate="G$1" pin="2"/>
 <pinref part="J14" gate="G$1" pin="1"/>
 <wire x1="254" y1="53.34" x2="254" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="254" y1="50.8" x2="254" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="254" y1="53.34" x2="274.32" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="53.34" x2="274.32" y2="68.58" width="0.1524" layer="91"/>
+<junction x="254" y="50.8"/>
+<pinref part="R25" gate="R" pin="2"/>
 <junction x="254" y="53.34"/>
 <label x="264.16" y="53.34" size="1.778" layer="95"/>
-<pinref part="R26" gate="G$1" pin="1"/>
-<wire x1="254" y1="50.8" x2="254" y2="53.34" width="0.1524" layer="91"/>
-<junction x="254" y="53.34"/>
 </segment>
 </net>
 <net name="N$66" class="0">
@@ -25888,6 +25888,8 @@ pre-amplifier</text>
 <approved hash="104,5,213.36,149.86,U7,PGND,DGND,,,"/>
 <approved hash="104,5,124.46,40.64,Q14,GND,DGND,,,"/>
 <approved hash="104,5,124.46,43.18,Q14,GND1,DGND,,,"/>
+<approved hash="202,5,175.26,15.24,IC19B,-IN,,,,"/>
+<approved hash="202,5,175.26,20.32,IC19B,+IN,,,,"/>
 <approved hash="104,5,182.88,25.4,IC19P,V+,ISEN_OP_EN,,,"/>
 <approved hash="104,5,182.88,10.16,IC19P,V-,DGND,,,"/>
 <approved hash="104,5,289.56,30.48,IC21,GND,DGND,,,"/>
