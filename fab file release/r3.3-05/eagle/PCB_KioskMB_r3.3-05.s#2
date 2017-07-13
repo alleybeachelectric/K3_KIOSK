@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -18080,93 +18080,6 @@ diameter 5 mm, grid 2.54 mm</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="PCB_KioskMB_r3.3-05">
-<description>Generated from &lt;b&gt;PCB_KioskMB_r3.3-05.sch&lt;/b&gt;&lt;p&gt;
-by exp-lbrs.ulp</description>
-<packages>
-<package name="0603">
-<description>Standard 0603 package</description>
-<wire x1="-0.2286" y1="0.254" x2="0.2286" y2="0.254" width="0.127" layer="51"/>
-<wire x1="0.2286" y1="-0.254" x2="-0.2286" y2="-0.254" width="0.127" layer="51"/>
-<wire x1="0.2286" y1="0.254" x2="0.2286" y2="-0.254" width="0.127" layer="51"/>
-<wire x1="-0.2286" y1="0.254" x2="-0.2286" y2="-0.254" width="0.127" layer="51"/>
-<wire x1="-1.4288" y1="0.2381" x2="-1.4288" y2="0.7144" width="0.127" layer="21"/>
-<wire x1="-1.4288" y1="0.7144" x2="1.4288" y2="0.7144" width="0.127" layer="21"/>
-<wire x1="1.4288" y1="0.7144" x2="1.4288" y2="0.2381" width="0.127" layer="21"/>
-<wire x1="-1.4288" y1="-0.2381" x2="-1.4288" y2="-0.7144" width="0.127" layer="21"/>
-<wire x1="-1.4288" y1="-0.7144" x2="1.4288" y2="-0.7144" width="0.127" layer="21"/>
-<wire x1="1.4288" y1="-0.7144" x2="1.4288" y2="-0.2381" width="0.127" layer="21"/>
-<rectangle x1="-0.635" y1="-0.4064" x2="-0.2794" y2="0.4064" layer="51"/>
-<rectangle x1="0.2794" y1="-0.4064" x2="0.635" y2="0.4064" layer="51"/>
-<smd name="1" x="-0.7874" y="0" dx="0.762" dy="0.9652" layer="1"/>
-<smd name="2" x="0.7874" y="0" dx="0.762" dy="0.9652" layer="1"/>
-<text x="-1.4605" y="0.8844" size="0.762" layer="27" ratio="12">&gt;VALUE</text>
-<text x="-1.3205" y="-0.3268" size="0.762" layer="25" ratio="12">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="CAP">
-<wire x1="0" y1="0" x2="0" y2="0.762" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="0.762" x2="0" y2="0.762" width="0.254" layer="94"/>
-<wire x1="0" y1="0.762" x2="1.524" y2="0.762" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="1.778" x2="0" y2="1.778" width="0.254" layer="94"/>
-<wire x1="0" y1="1.778" x2="1.524" y2="1.778" width="0.254" layer="94"/>
-<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<text x="0.3175" y="2.2225" size="1.524" layer="95">&gt;NAME</text>
-<text x="0.3175" y="-1.27" size="1.524" layer="96">&gt;VALUE</text>
-</symbol>
-<symbol name="R">
-<wire x1="3.81" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.1524" layer="94"/>
-<wire x1="-3.81" y1="0" x2="-3.048" y2="0.762" width="0.254" layer="94"/>
-<wire x1="-3.048" y1="0.762" x2="-1.524" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-1.524" y1="-0.762" x2="0" y2="0.762" width="0.254" layer="94"/>
-<wire x1="0" y1="0.762" x2="1.524" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="1.524" y1="-0.762" x2="3.048" y2="0.762" width="0.254" layer="94"/>
-<wire x1="3.048" y1="0.762" x2="3.81" y2="0" width="0.254" layer="94"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-<pin name="2" x="5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<text x="-2.54" y="1.3716" size="1.524" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-2.6035" size="1.524" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="C-0603" prefix="C" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="R-0603" prefix="R" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="R" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -18326,19 +18239,19 @@ by exp-lbrs.ulp</description>
 <attribute name="MANUFACTURER" value="Rohm"/>
 <attribute name="MFR_PN" value="MCR03ERTJ100"/>
 </part>
-<part name="C124" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="100pF">
+<part name="C124" library="Brenneman" deviceset="C-US-NP" device="0603" value="100pF,C0G">
 <attribute name="MANUFACTURER" value="Samsung"/>
 <attribute name="MFR_PN" value="CL10C101JB8NCNC"/>
 </part>
-<part name="C125" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="0.1uF">
+<part name="C125" library="Brenneman" deviceset="C-US-NP" device="0603" value="0.1uF">
 <attribute name="MANUFACTURER" value="Murata"/>
 <attribute name="MFR_PN" value="GRM188R71H104KA93D"/>
 </part>
-<part name="C126" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="0.1uF">
+<part name="C126" library="Brenneman" deviceset="C-US-NP" device="0603" value="0.1uF">
 <attribute name="MANUFACTURER" value="Murata"/>
 <attribute name="MFR_PN" value="GRM188R71H104KA93D"/>
 </part>
-<part name="C127" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="4.7uF/6.3V">
+<part name="C127" library="Brenneman" deviceset="C-US-NP" device="0603" value="4.7uF/6.3V">
 <attribute name="MANUFACTURER" value="Samsung"/>
 <attribute name="MFR_PN" value="CL10A475KA8NQNC"/>
 </part>
@@ -18362,11 +18275,11 @@ by exp-lbrs.ulp</description>
 <attribute name="MANUFACTURER" value="TI"/>
 <attribute name="MFR_PN" value="CSD87331Q3D"/>
 </part>
-<part name="C132" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="0.1uF">
+<part name="C132" library="Brenneman" deviceset="C-US-NP" device="0603" value="0.1uF">
 <attribute name="MANUFACTURER" value="Murata"/>
 <attribute name="MFR_PN" value="GRM188R71H104KA93D"/>
 </part>
-<part name="R165" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="93.1K,1%">
+<part name="R165" library="Brenneman" deviceset="R-US_" device="R0603" value="93.1k,1%">
 <attribute name="MANUFACTURER" value="Panasonic"/>
 <attribute name="MFR_PN" value="ERJ-3EKF9312V"/>
 </part>
@@ -18374,7 +18287,7 @@ by exp-lbrs.ulp</description>
 <attribute name="MANUFACTURER" value="Samsung"/>
 <attribute name="MFR_PN" value="CL31A226KAHNNNE"/>
 </part>
-<part name="R162" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="10K">
+<part name="R162" library="Brenneman" deviceset="R-US_" device="R0603" value="10k">
 <attribute name="MANUFACTURER" value="Panasonic"/>
 <attribute name="MFR_PN" value="ERJ-3GEYJ103V"/>
 </part>
@@ -18390,7 +18303,7 @@ by exp-lbrs.ulp</description>
 <attribute name="MANUFACTURER" value="Samsung"/>
 <attribute name="MFR_PN" value="CL31A226KAHNNNE"/>
 </part>
-<part name="R164" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="5.90K,1%">
+<part name="R164" library="Brenneman" deviceset="R-US_" device="R0603" value="5.90k,1%">
 <attribute name="MANUFACTURER" value="Panasonic"/>
 <attribute name="MFR_PN" value="ERJ-3EKF5901V"/>
 </part>
@@ -18407,7 +18320,7 @@ by exp-lbrs.ulp</description>
 <attribute name="MFR_PN" value="CL31A226KAHNNNE"/>
 </part>
 <part name="Q15" library="Vishay-AON" deviceset="SI4564" device="DY"/>
-<part name="R156" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="1M">
+<part name="R156" library="Brenneman" deviceset="R-US_" device="R0603" value="1M">
 <attribute name="MANUFACTURER" value="Panasonic"/>
 <attribute name="MFR_PN" value="ERJ-3GEYJ104V"/>
 </part>
@@ -18420,19 +18333,19 @@ by exp-lbrs.ulp</description>
 <attribute name="MANUFACTURER" value="Rohm"/>
 <attribute name="MFR_PN" value="MCR03ERTJ100"/>
 </part>
-<part name="C138" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="100pF">
+<part name="C138" library="Brenneman" deviceset="C-US-NP" device="0603" value="100pF,C0G">
 <attribute name="MANUFACTURER" value="Samsung"/>
 <attribute name="MFR_PN" value="CL10C101JB8NCNC"/>
 </part>
-<part name="C139" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="0.1uF">
+<part name="C139" library="Brenneman" deviceset="C-US-NP" device="0603" value="0.1uF">
 <attribute name="MANUFACTURER" value="Murata"/>
 <attribute name="MFR_PN" value="GRM188R71H104KA93D"/>
 </part>
-<part name="C140" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="0.1uF">
+<part name="C140" library="Brenneman" deviceset="C-US-NP" device="0603" value="0.1uF">
 <attribute name="MANUFACTURER" value="Murata"/>
 <attribute name="MFR_PN" value="GRM188R71H104KA93D"/>
 </part>
-<part name="C141" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="4.7uF/6.3V">
+<part name="C141" library="Brenneman" deviceset="C-US-NP" device="0603" value="4.7uF/6.3V">
 <attribute name="MANUFACTURER" value="Samsung"/>
 <attribute name="MFR_PN" value="CL10A475KA8NQNC"/>
 </part>
@@ -18456,15 +18369,15 @@ by exp-lbrs.ulp</description>
 <attribute name="MANUFACTURER" value="TI"/>
 <attribute name="MFR_PN" value="CSD87331Q3D"/>
 </part>
-<part name="C147" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="0.1uF">
+<part name="C147" library="Brenneman" deviceset="C-US-NP" device="0603" value="0.1uF">
 <attribute name="MANUFACTURER" value="Murata"/>
 <attribute name="MFR_PN" value="GRM188R71H104KA93D"/>
 </part>
-<part name="R182" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="93.1K,1%">
+<part name="R182" library="Brenneman" deviceset="R-US_" device="R0603" value="93.1k,1%">
 <attribute name="MANUFACTURER" value="Panasonic"/>
 <attribute name="MFR_PN" value="ERJ-3EKFxxxxV"/>
 </part>
-<part name="R179" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="10K">
+<part name="R179" library="Brenneman" deviceset="R-US_" device="R0603" value="10k">
 <attribute name="MANUFACTURER" value="Panasonic"/>
 <attribute name="MFR_PN" value="ERJ-3GEYJ103V"/>
 </part>
@@ -18472,7 +18385,7 @@ by exp-lbrs.ulp</description>
 <attribute name="MANUFACTURER" value="Samsung"/>
 <attribute name="MFR_PN" value="CL31A226KAHNNNE"/>
 </part>
-<part name="R181" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="5.90K,1%">
+<part name="R181" library="Brenneman" deviceset="R-US_" device="R0603" value="5.90k,1%">
 <attribute name="MANUFACTURER" value="Panasonic"/>
 <attribute name="MFR_PN" value="ERJ-3EKFxxxxV"/>
 </part>
@@ -18480,7 +18393,7 @@ by exp-lbrs.ulp</description>
 <attribute name="MANUFACTURER" value="Samsung"/>
 <attribute name="MFR_PN" value="CL10C101JB8NNNC"/>
 </part>
-<part name="C148" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="10nF">
+<part name="C148" library="Brenneman" deviceset="C-US-NP" device="0603" value="10nF">
 <attribute name="MANUFACTURER" value="Samsung"/>
 <attribute name="MFR_PN" value="CL10B103KB8NNNC"/>
 </part>
@@ -18488,11 +18401,11 @@ by exp-lbrs.ulp</description>
 <attribute name="MANUFACTURER" value="Samsung"/>
 <attribute name="MFR_PN" value="CL31A226KAHNNNE"/>
 </part>
-<part name="R167" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="100K">
+<part name="R167" library="Brenneman" deviceset="R-US_" device="R0603" value="100k">
 <attribute name="MANUFACTURER" value="Panasonic"/>
 <attribute name="MFR_PN" value="ERJ-3GEYJ104V"/>
 </part>
-<part name="R186" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="100K">
+<part name="R186" library="Brenneman" deviceset="R-US_" device="R0603" value="100k">
 <attribute name="MANUFACTURER" value="Panasonic"/>
 <attribute name="MFR_PN" value="ERJ-3GEYJ104V"/>
 </part>
@@ -18515,7 +18428,7 @@ by exp-lbrs.ulp</description>
 <part name="U$39" library="Frames-AON" deviceset="TABL_L75_LOC" device=""/>
 <part name="C149" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-1210" device="" value="22u/16V"/>
 <part name="U$74" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C157" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-1210" device="" value="47uF/6.3V"/>
+<part name="C157" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-1210" device="" value="47u/6.3V"/>
 <part name="U$75" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="C150" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
 <part name="D27" library="st-microelectronics-AOM" deviceset="SMLVT3V3" device=""/>
@@ -18592,7 +18505,7 @@ by exp-lbrs.ulp</description>
 <part name="U$220" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="C153" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-1210" device="" value="22u/16V"/>
 <part name="U$225" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C158" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-1210" device="" value="47uF/6.3V"/>
+<part name="C158" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-1210" device="" value="47u/6.3V"/>
 <part name="U$226" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="C154" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
 <part name="R197" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
@@ -18617,7 +18530,7 @@ by exp-lbrs.ulp</description>
 <part name="U$317" library="SUPPLY" deviceset="+SMB" device=""/>
 <part name="C34" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="dnp"/>
 <part name="U$318" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="R23" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="10K"/>
+<part name="R23" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603-0R" device="TOP" value="10K"/>
 <part name="U$319" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="D20" library="NXP-AOM" deviceset="PMEG3030BEP" device=""/>
 <part name="D22" library="NXP-AOM" deviceset="PMEG3030BEP" device=""/>
@@ -18658,23 +18571,23 @@ by exp-lbrs.ulp</description>
 <attribute name="MANUFACTURER" value="Kemet"/>
 <attribute name="MFR_PN" value="EEV227M016A9HAA"/>
 </part>
-<part name="C173" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="0.47uF">
+<part name="C173" library="Brenneman" deviceset="C-US-NP" device="0603" value="0.47uF">
 <attribute name="MANUFACTURER" value="Taiyo Yuden"/>
 <attribute name="MFR_PN" value="TMK107B7474KA-TR"/>
 </part>
-<part name="C178" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="0.47uF">
+<part name="C178" library="Brenneman" deviceset="C-US-NP" device="0603" value="0.47uF">
 <attribute name="MANUFACTURER" value="Taiyo Yuden"/>
 <attribute name="MFR_PN" value="TMK107B7474KA-TR"/>
 </part>
-<part name="C175" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="0.47uF">
+<part name="C175" library="Brenneman" deviceset="C-US-NP" device="0603" value="0.47uF">
 <attribute name="MANUFACTURER" value="Samsung"/>
 <attribute name="MFR_PN" value="CL10B153KB8NNNC"/>
 </part>
-<part name="C177" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="0.47uF">
+<part name="C177" library="Brenneman" deviceset="C-US-NP" device="0603" value="0.47uF">
 <attribute name="MANUFACTURER" value="Samsung"/>
 <attribute name="MFR_PN" value="CL10B153KB8NNNC"/>
 </part>
-<part name="R205" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="100K"/>
+<part name="R205" library="Brenneman" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="R198" library="Brenneman" deviceset="R-US_" device="R0603" value="10">
 <attribute name="MANUFACTURER" value="Rohm"/>
 <attribute name="MFR_PN" value="MCR03ERTJ100"/>
@@ -18683,9 +18596,9 @@ by exp-lbrs.ulp</description>
 <attribute name="MANUFACTURER" value="Kemet"/>
 <attribute name="MFR_PN" value="EEV227M016A9HAA"/>
 </part>
-<part name="R204" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="1K"/>
-<part name="C167" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="0.1uF"/>
-<part name="C168" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="0.1uF"/>
+<part name="R204" library="Brenneman" deviceset="R-US_" device="R0603" value="1k"/>
+<part name="C167" library="Brenneman" deviceset="C-US-NP" device="0603" value="0.1uF"/>
+<part name="C168" library="Brenneman" deviceset="C-US-NP" device="0603" value="0.1uF"/>
 <part name="C169" library="Brenneman" deviceset="C-US-NP" device="0603" value="1.0nF,50V">
 <attribute name="MANUFACTURER" value="Samsung"/>
 <attribute name="MFR_PN" value="CL10B102KB8NNNC"/>
@@ -18700,29 +18613,29 @@ by exp-lbrs.ulp</description>
 <attribute name="MANUFACTURER" value="Samsung"/>
 <attribute name="MFR_PN" value="CL31A226KAHNNNE"/>
 </part>
-<part name="R206" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="33R"/>
+<part name="R206" library="Brenneman" deviceset="R-US_" device="R0603" value="33"/>
 <part name="C181" library="Brenneman" deviceset="C-US-NP" device="1206" value="22uF,25V,1206">
 <attribute name="MANUFACTURER" value="Samsung"/>
 <attribute name="MFR_PN" value="CL31A226KAHNNNE"/>
 </part>
-<part name="C182" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="1uF,25V"/>
-<part name="R207" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="3.3K"/>
-<part name="C185" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="3.3uF,16V"/>
+<part name="C182" library="Brenneman" deviceset="C-US-NP" device="0603" value="1uF,25V"/>
+<part name="R207" library="Brenneman" deviceset="R-US_" device="R0603" value="3.3k"/>
+<part name="C185" library="Brenneman" deviceset="C-US-NP" device="0603" value="3.3uF,16V"/>
 <part name="R211" library="Brenneman" deviceset="R-US_" device="R0603" value="3.9k"/>
 <part name="R209" library="Brenneman" deviceset="R-US_" device="R0603" value="120k"/>
 <part name="C186" library="Brenneman" deviceset="C-US-NP" device="0603" value="220pF"/>
 <part name="Q24" library="Brenneman" deviceset="BSS138" device="" value="BSS138"/>
 <part name="R208" library="Brenneman" deviceset="R-US_" device="R0603" value="6.8k"/>
-<part name="R210" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="1M"/>
-<part name="C184" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="3.3uF,16V"/>
+<part name="R210" library="Brenneman" deviceset="R-US_" device="R0603" value="1M"/>
+<part name="C184" library="Brenneman" deviceset="C-US-NP" device="0603" value="3.3uF,16V"/>
 <part name="J48" library="Tyco-U" deviceset="3-641215-2" device=""/>
 <part name="U$269" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="IC18" library="FTD-AON" deviceset="FT232RL" device=""/>
 <part name="D17" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="LED-0805" device="" value="LED-GR"/>
 <part name="D19" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="LED-0805" device="" value="LED-GR"/>
-<part name="C121" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
+<part name="C121" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1u"/>
 <part name="U$197" library="SUPPLY" deviceset="DGND" device=""/>
-<part name="C114" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1uF"/>
+<part name="C114" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="0.1u"/>
 <part name="U$198" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="J41" library="CON-pinHeader-AON" deviceset="MA06-1" device="" value="DNP"/>
 <part name="U$199" library="SUPPLY" deviceset="DGND" device=""/>
@@ -18734,7 +18647,7 @@ by exp-lbrs.ulp</description>
 <part name="R190" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="47K"/>
 <part name="U$196" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="C134" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="10nF"/>
-<part name="R159" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="1M">
+<part name="R159" library="Brenneman" deviceset="R-US_" device="R0603" value="1M">
 <attribute name="MANUFACTURER" value="Panasonic"/>
 <attribute name="MFR_PN" value="ERJ-3GEYJ104V"/>
 </part>
@@ -18745,7 +18658,7 @@ by exp-lbrs.ulp</description>
 <part name="R12" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603-0R" device="TOP" value="470K"/>
 <part name="R22" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
 <part name="R24" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="1M"/>
-<part name="R7" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="100K"/>
+<part name="R7" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="100K"/>
 <part name="TP12" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP_0812" device=""/>
 <part name="U$256" library="SUPPLY" deviceset="DGND" device=""/>
 <part name="U$118" library="SUPPLY" deviceset="+SMB" device=""/>
@@ -18796,15 +18709,19 @@ by exp-lbrs.ulp</description>
 <part name="R203" library="Brenneman" deviceset="R-US_" device="R0603" value="DNP"/>
 <part name="R202" library="Brenneman" deviceset="R-US_" device="R0603" value="DNP"/>
 <part name="U$120" library="SUPPLY" deviceset="AGND" device=""/>
-<part name="R201" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="1M"/>
-<part name="R200" library="PCB_KioskMB_r3.3-05" deviceset="R-0603" device="" value="1M"/>
+<part name="R201" library="Brenneman" deviceset="R-US_" device="R0603" value="1M"/>
+<part name="R200" library="Brenneman" deviceset="R-US_" device="R0603" value="1M"/>
 <part name="U$329" library="SUPPLY" deviceset="+3.3V/1" device=""/>
 <part name="TP69" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="P1-13" device=""/>
 <part name="J49" library="Tyco-U" deviceset="3-641215-2" device=""/>
 <part name="U$330" library="SUPPLY" deviceset="+3.3V/1" device=""/>
+<part name="R199" library="Brenneman" deviceset="R-US_" device="R0603" value="0R">
+<attribute name="MANUFACTURER" value="Rohm"/>
+<attribute name="MFR_PN" value="MCR03ERTJ100"/>
+</part>
 <part name="J47" library="CON-Hirose-AON" deviceset="DF11-10DP-2DSA" device="" technology="(01)"/>
-<part name="C183" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="3.3uF,16V"/>
-<part name="C174" library="PCB_KioskMB_r3.3-05" deviceset="C-0603" device="" value="0.47uF">
+<part name="C183" library="Brenneman" deviceset="C-US-NP" device="0603" value="3.3uF,16V"/>
+<part name="C174" library="Brenneman" deviceset="C-US-NP" device="0603" value="0.47uF">
 <attribute name="MANUFACTURER" value="Samsung"/>
 <attribute name="MFR_PN" value="CL10B153KB8NNNC"/>
 </part>
@@ -18899,7 +18816,7 @@ by exp-lbrs.ulp</description>
 <part name="U$91" library="SUPPLY" deviceset="+3.3V/2" device=""/>
 <part name="J3" library="elock_lib" deviceset="14011213102000" device=""/>
 <part name="U$19" library="SUPPLY" deviceset="+3.3V/1" device=""/>
-<part name="C48" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="10uF/4V"/>
+<part name="C48" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="C-0603" device="" value="10uF"/>
 <part name="FID4" library="technol" deviceset="REF" device=""/>
 <part name="TP6" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="ROUND_SMD" device="1MM"/>
 <part name="TP10" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="ROUND_SMD" device="1MM"/>
@@ -18907,10 +18824,6 @@ by exp-lbrs.ulp</description>
 <part name="R26" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="0.22R"/>
 <part name="R25" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="10K"/>
 <part name="R30" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="R-0603" device="" value="10K"/>
-<part name="R16" library="Brenneman" deviceset="R-US_" device="R0603" value="0">
-<attribute name="MANUFACTURER" value="Panasonic"/>
-<attribute name="MFR_PN" value="ERJ-3GEY0R00V"/>
-</part>
 </parts>
 <sheets>
 <sheet>
@@ -19434,7 +19347,7 @@ by exp-lbrs.ulp</description>
 <attribute name="VALUE" x="173.0375" y="49.53" size="1.524" layer="96"/>
 </instance>
 <instance part="U$318" gate="G$1" x="185.42" y="53.34" smashed="yes"/>
-<instance part="R23" gate="G$1" x="162.56" y="55.88" smashed="yes">
+<instance part="R23" gate="R" x="162.56" y="55.88" smashed="yes">
 <attribute name="NAME" x="160.02" y="57.2516" size="1.524" layer="95"/>
 <attribute name="VALUE" x="160.02" y="53.2765" size="1.524" layer="96"/>
 </instance>
@@ -21604,7 +21517,7 @@ by exp-lbrs.ulp</description>
 <pinref part="C34" gate="G$1" pin="1"/>
 <wire x1="180.34" y1="55.88" x2="172.72" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="55.88" x2="167.64" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="R23" gate="G$1" pin="2"/>
+<pinref part="R23" gate="R" pin="2"/>
 <junction x="172.72" y="55.88"/>
 </segment>
 </net>
@@ -21617,7 +21530,7 @@ by exp-lbrs.ulp</description>
 <segment>
 <wire x1="147.32" y1="55.88" x2="157.48" y2="55.88" width="0.1524" layer="91"/>
 <label x="147.32" y="56.1975" size="1.778" layer="95"/>
-<pinref part="R23" gate="G$1" pin="1"/>
+<pinref part="R23" gate="R" pin="1"/>
 </segment>
 </net>
 <net name="N$64" class="0">
@@ -21972,8 +21885,8 @@ by exp-lbrs.ulp</description>
 <instance part="U$81" gate="G$1" x="45.72" y="157.48" smashed="yes"/>
 <instance part="U$19" gate="G$1" x="259.08" y="279.4" smashed="yes"/>
 <instance part="C48" gate="G$1" x="266.7" y="266.7" smashed="yes" rot="R90">
-<attribute name="NAME" x="261.9375" y="263.8425" size="1.524" layer="95"/>
-<attribute name="VALUE" x="261.9375" y="260.35" size="1.524" layer="96"/>
+<attribute name="NAME" x="264.4775" y="267.0175" size="1.524" layer="95" rot="R90"/>
+<attribute name="VALUE" x="267.97" y="267.0175" size="1.524" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -23032,11 +22945,11 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 <attribute name="MANUFACTURER" x="121.92" y="121.92" size="1.778" layer="96" display="off"/>
 <attribute name="MFR_PN" x="121.92" y="121.92" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C148" gate="G$1" x="139.7" y="111.76" smashed="yes">
-<attribute name="MANUFACTURER" x="139.7" y="111.76" size="1.778" layer="96" display="off"/>
-<attribute name="MFR_PN" x="139.7" y="111.76" size="1.778" layer="96" display="off"/>
-<attribute name="NAME" x="130.556" y="112.395" size="1.778" layer="95"/>
-<attribute name="VALUE" x="130.556" y="108.839" size="1.778" layer="96"/>
+<instance part="C148" gate="G$1" x="139.7" y="114.3" smashed="yes">
+<attribute name="MANUFACTURER" x="139.7" y="114.3" size="1.778" layer="96" display="off"/>
+<attribute name="MFR_PN" x="139.7" y="114.3" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="128.016" y="112.395" size="1.778" layer="95"/>
+<attribute name="VALUE" x="128.016" y="108.839" size="1.778" layer="96"/>
 </instance>
 <instance part="C136" gate="G$1" x="106.68" y="193.04" smashed="yes">
 <attribute name="MANUFACTURER" x="106.68" y="193.04" size="1.778" layer="96" display="off"/>
@@ -23475,7 +23388,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 <wire x1="259.08" y1="276.86" x2="259.08" y2="302.26" width="0.1524" layer="91"/>
 <junction x="259.08" y="276.86"/>
 <pinref part="C126" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="302.26" x2="259.08" y2="302.26" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="302.26" x2="259.08" y2="302.26" width="0.1524" layer="91"/>
 <label x="218.44" y="271.78" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -23484,6 +23397,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 <pinref part="U6" gate="G$1" pin="VCC"/>
 <wire x1="213.36" y1="297.18" x2="226.06" y2="297.18" width="0.1524" layer="91"/>
 <pinref part="C127" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="297.18" x2="226.06" y2="294.64" width="0.1524" layer="91"/>
 <label x="215.9" y="297.18" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -23491,7 +23405,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 <segment>
 <pinref part="U6" gate="G$1" pin="BOOT"/>
 <pinref part="C126" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="302.26" x2="233.68" y2="302.26" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="302.26" x2="236.22" y2="302.26" width="0.1524" layer="91"/>
 <label x="215.9" y="302.26" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -23590,6 +23504,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 <net name="B12_SS" class="0">
 <segment>
 <pinref part="C132" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="254" x2="162.56" y2="256.54" width="0.1524" layer="91"/>
 <pinref part="U6" gate="G$1" pin="SS"/>
 <wire x1="162.56" y1="256.54" x2="177.8" y2="256.54" width="0.1524" layer="91"/>
 <label x="165.1" y="256.54" size="1.778" layer="95"/>
@@ -23642,7 +23557,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 <pinref part="R157" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="314.96" x2="142.24" y2="307.34" width="0.1524" layer="91"/>
 <pinref part="C124" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="307.34" x2="144.78" y2="307.34" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="307.34" x2="147.32" y2="307.34" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="307.34" x2="142.24" y2="297.18" width="0.1524" layer="91"/>
 <junction x="142.24" y="307.34"/>
 <pinref part="U6" gate="G$1" pin="ISNS+"/>
@@ -23654,7 +23569,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 <segment>
 <pinref part="C124" gate="G$1" pin="2"/>
 <pinref part="R158" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="307.34" x2="162.56" y2="307.34" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="307.34" x2="162.56" y2="307.34" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="307.34" x2="162.56" y2="314.96" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="307.34" x2="162.56" y2="302.26" width="0.1524" layer="91"/>
 <junction x="162.56" y="307.34"/>
@@ -23805,7 +23720,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 <segment>
 <pinref part="C138" gate="G$1" pin="2"/>
 <pinref part="R172" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="175.26" x2="162.56" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="175.26" x2="162.56" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="175.26" x2="162.56" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="175.26" x2="162.56" y2="170.18" width="0.1524" layer="91"/>
 <junction x="162.56" y="175.26"/>
@@ -23819,7 +23734,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 <pinref part="R171" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="182.88" x2="142.24" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="C138" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="175.26" x2="144.78" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="175.26" x2="147.32" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="175.26" x2="142.24" y2="165.1" width="0.1524" layer="91"/>
 <junction x="142.24" y="175.26"/>
 <pinref part="U7" gate="G$1" pin="ISNS+"/>
@@ -23860,6 +23775,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 <net name="STR_SS" class="0">
 <segment>
 <pinref part="C147" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="121.92" x2="162.56" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="U7" gate="G$1" pin="SS"/>
 <wire x1="162.56" y1="124.46" x2="177.8" y2="124.46" width="0.1524" layer="91"/>
 <label x="165.1" y="124.46" size="1.778" layer="95"/>
@@ -23935,7 +23851,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 <wire x1="259.08" y1="144.78" x2="259.08" y2="170.18" width="0.1524" layer="91"/>
 <junction x="259.08" y="144.78"/>
 <pinref part="C140" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="170.18" x2="259.08" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="170.18" x2="259.08" y2="170.18" width="0.1524" layer="91"/>
 <label x="218.44" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -23952,6 +23868,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 <pinref part="U7" gate="G$1" pin="VCC"/>
 <wire x1="213.36" y1="165.1" x2="226.06" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="C141" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="165.1" x2="226.06" y2="162.56" width="0.1524" layer="91"/>
 <label x="215.9" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -23959,7 +23876,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 <segment>
 <pinref part="U7" gate="G$1" pin="BOOT"/>
 <pinref part="C140" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="170.18" x2="233.68" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="170.18" x2="236.22" y2="170.18" width="0.1524" layer="91"/>
 <label x="215.9" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -24105,7 +24022,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 </segment>
 <segment>
 <pinref part="C125" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="294.64" x2="124.46" y2="299.72" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="294.64" x2="124.46" y2="297.18" width="0.1524" layer="91"/>
 <pinref part="U$69" gate="G$1" pin="DGND"/>
 </segment>
 <segment>
@@ -24125,7 +24042,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 </segment>
 <segment>
 <pinref part="C132" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="243.84" x2="162.56" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="243.84" x2="162.56" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="U$79" gate="G$1" pin="DGND"/>
 </segment>
 <segment>
@@ -24147,7 +24064,6 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 <segment>
 <pinref part="C127" gate="G$1" pin="2"/>
 <pinref part="U$125" gate="G$1" pin="DGND"/>
-<wire x1="226.06" y1="287.02" x2="226.06" y2="289.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="Q16" gate="G$1" pin="PGND"/>
@@ -24191,7 +24107,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 </segment>
 <segment>
 <pinref part="C139" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="162.56" x2="119.38" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="162.56" x2="119.38" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="U$142" gate="G$1" pin="DGND"/>
 </segment>
 <segment>
@@ -24211,7 +24127,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 </segment>
 <segment>
 <pinref part="C147" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="111.76" x2="162.56" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="111.76" x2="162.56" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="U$145" gate="G$1" pin="DGND"/>
 </segment>
 <segment>
@@ -24232,7 +24148,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 </segment>
 <segment>
 <pinref part="C141" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="152.4" x2="226.06" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="152.4" x2="226.06" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="U$209" gate="G$1" pin="DGND"/>
 </segment>
 <segment>
@@ -24408,6 +24324,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 <junction x="134.62" y="332.74"/>
 <pinref part="C125" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="307.34" x2="134.62" y2="332.74" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="304.8" x2="124.46" y2="307.34" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="307.34" x2="134.62" y2="307.34" width="0.1524" layer="91"/>
 <junction x="134.62" y="307.34"/>
 <wire x1="119.38" y1="332.74" x2="119.38" y2="327.66" width="0.1524" layer="91"/>
@@ -24769,6 +24686,7 @@ At 24 V output, Rcomp is 13.3 k and RT is 63.4 k.</text>
 <junction x="129.54" y="200.66"/>
 <pinref part="C139" gate="G$1" pin="1"/>
 <wire x1="129.54" y1="175.26" x2="129.54" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="172.72" x2="119.38" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="175.26" x2="129.54" y2="175.26" width="0.1524" layer="91"/>
 <junction x="129.54" y="175.26"/>
 <wire x1="119.38" y1="200.66" x2="119.38" y2="195.58" width="0.1524" layer="91"/>
@@ -25062,6 +24980,12 @@ LINE IN of SBC.</text>
 <attribute name="VALUE" x="238.4425" y="94.615" size="1.524" layer="96"/>
 </instance>
 <instance part="U$330" gate="G$1" x="251.46" y="104.14" smashed="yes"/>
+<instance part="R199" gate="G$1" x="287.02" y="302.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="285.5214" y="300.99" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="290.322" y="300.99" size="1.778" layer="96" rot="R90"/>
+<attribute name="MANUFACTURER" x="287.02" y="302.26" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MFR_PN" x="287.02" y="302.26" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="J47" gate="G$1" x="398.78" y="170.18" smashed="yes" rot="R180">
 <attribute name="VALUE" x="387.35" y="160.02" size="1.778" layer="96"/>
 <attribute name="NAME" x="397.51" y="178.562" size="1.778" layer="95"/>
@@ -25085,12 +25009,6 @@ LINE IN of SBC.</text>
 <attribute name="NAME" x="401.6375" y="253.5555" size="1.524" layer="95" rot="R180"/>
 <attribute name="VALUE" x="404.1775" y="263.525" size="1.524" layer="96" rot="R180"/>
 </instance>
-<instance part="R16" gate="G$1" x="287.02" y="302.26" smashed="yes" rot="R270">
-<attribute name="NAME" x="285.5214" y="298.45" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="286.258" y="306.832" size="1.778" layer="96" rot="R90"/>
-<attribute name="MANUFACTURER" x="287.02" y="302.26" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="MFR_PN" x="287.02" y="302.26" size="1.778" layer="96" rot="R270" display="off"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -25103,7 +25021,7 @@ LINE IN of SBC.</text>
 <pinref part="U8" gate="G$1" pin="BSP@2"/>
 <wire x1="320.04" y1="276.86" x2="317.5" y2="276.86" width="0.1524" layer="91"/>
 <pinref part="C173" gate="G$1" pin="1"/>
-<wire x1="320.04" y1="279.4" x2="332.74" y2="279.4" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="279.4" x2="335.28" y2="279.4" width="0.1524" layer="91"/>
 <junction x="320.04" y="279.4"/>
 <label x="320.04" y="279.4" size="1.778" layer="95"/>
 </segment>
@@ -25120,7 +25038,7 @@ LINE IN of SBC.</text>
 <junction x="320.04" y="269.24"/>
 <pinref part="C173" gate="G$1" pin="2"/>
 <wire x1="345.44" y1="269.24" x2="350.52" y2="269.24" width="0.1524" layer="91"/>
-<wire x1="340.36" y1="279.4" x2="345.44" y2="279.4" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="279.4" x2="345.44" y2="279.4" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="279.4" x2="345.44" y2="269.24" width="0.1524" layer="91"/>
 <junction x="345.44" y="269.24"/>
 <label x="320.04" y="269.24" size="1.778" layer="95"/>
@@ -25134,7 +25052,7 @@ LINE IN of SBC.</text>
 <pinref part="U8" gate="G$1" pin="BSN@2"/>
 <wire x1="320.04" y1="256.54" x2="317.5" y2="256.54" width="0.1524" layer="91"/>
 <pinref part="C178" gate="G$1" pin="1"/>
-<wire x1="320.04" y1="259.08" x2="332.74" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="259.08" x2="335.28" y2="259.08" width="0.1524" layer="91"/>
 <junction x="320.04" y="259.08"/>
 <label x="320.04" y="259.08" size="1.778" layer="95"/>
 </segment>
@@ -25151,7 +25069,7 @@ LINE IN of SBC.</text>
 <junction x="320.04" y="248.92"/>
 <pinref part="C178" gate="G$1" pin="2"/>
 <wire x1="345.44" y1="248.92" x2="350.52" y2="248.92" width="0.1524" layer="91"/>
-<wire x1="340.36" y1="259.08" x2="345.44" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="259.08" x2="345.44" y2="259.08" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="259.08" x2="345.44" y2="248.92" width="0.1524" layer="91"/>
 <junction x="345.44" y="248.92"/>
 <label x="320.04" y="248.92" size="1.778" layer="95"/>
@@ -25193,7 +25111,9 @@ LINE IN of SBC.</text>
 <wire x1="243.84" y1="327.66" x2="259.08" y2="327.66" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="327.66" x2="276.86" y2="327.66" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="327.66" x2="276.86" y2="325.12" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="325.12" x2="259.08" y2="327.66" width="0.1524" layer="91"/>
 <junction x="259.08" y="327.66"/>
+<wire x1="243.84" y1="327.66" x2="243.84" y2="325.12" width="0.1524" layer="91"/>
 <junction x="243.84" y="327.66"/>
 <pinref part="U8" gate="G$1" pin="PVCC@1"/>
 <wire x1="292.1" y1="297.18" x2="292.1" y2="294.64" width="0.1524" layer="91"/>
@@ -25236,18 +25156,18 @@ LINE IN of SBC.</text>
 <segment>
 <pinref part="C175" gate="G$1" pin="2"/>
 <pinref part="U8" gate="G$1" pin="INP"/>
-<wire x1="248.92" y1="269.24" x2="276.86" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="269.24" x2="276.86" y2="269.24" width="0.1524" layer="91"/>
 <label x="254" y="269.24" size="1.778" layer="95"/>
 <pinref part="C174" gate="G$1" pin="2"/>
-<wire x1="248.92" y1="276.86" x2="248.92" y2="269.24" width="0.1524" layer="91"/>
-<junction x="248.92" y="269.24"/>
+<wire x1="251.46" y1="276.86" x2="251.46" y2="269.24" width="0.1524" layer="91"/>
+<junction x="251.46" y="269.24"/>
 </segment>
 </net>
 <net name="AUD_AMP_INN" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="INN"/>
 <pinref part="C177" gate="G$1" pin="2"/>
-<wire x1="276.86" y1="259.08" x2="248.92" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="259.08" x2="251.46" y2="259.08" width="0.1524" layer="91"/>
 <label x="254" y="259.08" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -25287,9 +25207,9 @@ LINE IN of SBC.</text>
 <pinref part="R198" gate="G$1" pin="1"/>
 <wire x1="284.48" y1="309.88" x2="287.02" y2="309.88" width="0.1524" layer="91"/>
 <junction x="284.48" y="309.88"/>
+<pinref part="R199" gate="G$1" pin="2"/>
 <wire x1="287.02" y1="307.34" x2="287.02" y2="309.88" width="0.1524" layer="91"/>
 <junction x="287.02" y="309.88"/>
-<pinref part="R16" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="AUD_GVDD" class="0">
@@ -25366,7 +25286,7 @@ LINE IN of SBC.</text>
 <junction x="233.68" y="149.86"/>
 <pinref part="C182" gate="G$1" pin="1"/>
 <wire x1="248.92" y1="149.86" x2="261.62" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="149.86" x2="261.62" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="149.86" x2="261.62" y2="144.78" width="0.1524" layer="91"/>
 <junction x="248.92" y="149.86"/>
 <pinref part="U9" gate="G$1" pin="V+"/>
 <wire x1="261.62" y1="149.86" x2="281.94" y2="149.86" width="0.1524" layer="91"/>
@@ -25408,12 +25328,13 @@ LINE IN of SBC.</text>
 <segment>
 <pinref part="R211" gate="G$1" pin="1"/>
 <pinref part="C185" gate="G$1" pin="2"/>
-<wire x1="299.72" y1="83.82" x2="299.72" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="83.82" x2="299.72" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$69" class="0">
 <segment>
 <pinref part="C185" gate="G$1" pin="1"/>
+<wire x1="299.72" y1="99.06" x2="299.72" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="U9" gate="G$1" pin="-IN"/>
 <wire x1="299.72" y1="101.6" x2="299.72" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="119.38" x2="312.42" y2="119.38" width="0.1524" layer="91"/>
@@ -25438,11 +25359,11 @@ LINE IN of SBC.</text>
 <wire x1="327.66" y1="121.92" x2="345.44" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="121.92" x2="345.44" y2="101.6" width="0.1524" layer="91"/>
 <junction x="345.44" y="101.6"/>
-<wire x1="345.44" y1="121.92" x2="358.14" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="345.44" y1="121.92" x2="360.68" y2="121.92" width="0.1524" layer="91"/>
 <junction x="345.44" y="121.92"/>
 <pinref part="C184" gate="G$1" pin="1"/>
 <pinref part="C183" gate="G$1" pin="1"/>
-<wire x1="358.14" y1="134.62" x2="345.44" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="134.62" x2="345.44" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="134.62" x2="345.44" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -25480,9 +25401,9 @@ LINE IN of SBC.</text>
 <wire x1="259.08" y1="314.96" x2="276.86" y2="314.96" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="314.96" x2="276.86" y2="317.5" width="0.1524" layer="91"/>
 <junction x="223.52" y="314.96"/>
-<wire x1="259.08" y1="320.04" x2="259.08" y2="314.96" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="317.5" x2="259.08" y2="314.96" width="0.1524" layer="91"/>
 <junction x="259.08" y="314.96"/>
-<wire x1="243.84" y1="320.04" x2="243.84" y2="314.96" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="317.5" x2="243.84" y2="314.96" width="0.1524" layer="91"/>
 <junction x="243.84" y="314.96"/>
 <pinref part="C165" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="314.96" x2="200.66" y2="317.5" width="0.1524" layer="91"/>
@@ -25554,7 +25475,7 @@ LINE IN of SBC.</text>
 </segment>
 <segment>
 <pinref part="C182" gate="G$1" pin="2"/>
-<wire x1="261.62" y1="134.62" x2="261.62" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="134.62" x2="261.62" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="U$265" gate="G$1" pin="AGND"/>
 </segment>
 <segment>
@@ -25608,7 +25529,7 @@ LINE IN of SBC.</text>
 </segment>
 <segment>
 <pinref part="C177" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="259.08" x2="223.52" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="259.08" x2="223.52" y2="259.08" width="0.1524" layer="91"/>
 <label x="223.8375" y="259.3975" size="1.524" layer="95"/>
 <pinref part="U$341" gate="G$1" pin="AGND"/>
 </segment>
@@ -25623,7 +25544,7 @@ LINE IN of SBC.</text>
 <segment>
 <pinref part="U8" gate="G$1" pin="AVCC@2"/>
 <wire x1="287.02" y1="294.64" x2="287.02" y2="297.18" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="R199" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SBC_LINR" class="0">
@@ -25634,7 +25555,7 @@ LINE IN of SBC.</text>
 </segment>
 <segment>
 <pinref part="C183" gate="G$1" pin="2"/>
-<wire x1="365.76" y1="134.62" x2="386.08" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="134.62" x2="386.08" y2="134.62" width="0.1524" layer="91"/>
 <label x="372.4275" y="134.9375" size="1.524" layer="95"/>
 </segment>
 </net>
@@ -25646,7 +25567,7 @@ LINE IN of SBC.</text>
 </segment>
 <segment>
 <pinref part="C174" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="276.86" x2="223.52" y2="276.86" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="276.86" x2="223.52" y2="276.86" width="0.1524" layer="91"/>
 <label x="224.155" y="277.1775" size="1.524" layer="95"/>
 </segment>
 </net>
@@ -25658,7 +25579,7 @@ LINE IN of SBC.</text>
 </segment>
 <segment>
 <pinref part="C175" gate="G$1" pin="1"/>
-<wire x1="223.52" y1="269.24" x2="241.3" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="269.24" x2="243.84" y2="269.24" width="0.1524" layer="91"/>
 <label x="223.8375" y="269.5575" size="1.524" layer="95"/>
 </segment>
 </net>
@@ -25671,7 +25592,7 @@ LINE IN of SBC.</text>
 <segment>
 <pinref part="C184" gate="G$1" pin="2"/>
 <label x="372.4275" y="122.2375" size="1.778" layer="95"/>
-<wire x1="386.08" y1="121.92" x2="365.76" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="121.92" x2="368.3" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
